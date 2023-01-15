@@ -1,0 +1,1035 @@
+node js ---> around week4
+java -- course 2 (Hyperledger Fabric)
+
+cours1:
+
+1. node js
+2. solidyt (introducion)
+3. linux commands
+4. docker commands
+5. wallet n test networsk
+
+
+genesis block 
+
+{
+
+ network name: "simplilearn"
+ network id  : "123"
+ chain id    : "456"
+ nonce prefix : "5"
+
+}
+
+
+type transaction struct
+
+{ 
+  txn id string
+  value int
+  validated bool
+}
+
+tx4,20,Y ----> validd
+
+txn5,X,F ---> invalid
+
+Onboarding process: to add new peers in the network
+-------------------
+
+ 1. Front end/login portals  (which bank, bank ip, bank cert, bank public key)
+ 2. Command lines for network admins ((which bank, bank ip, bank cert, bank public key)
+
+
+
+Bitcoin:
+--------
+
+Genesis 
+
+{ 
+  network name : bitcoin
+  network id   : 1
+  chain id     : 7657
+  total supply : 21M
+ 
+}
+
+
+2016:
+-----
+
+difficulty --> 8798709700
+
+
+2020:
+----
+
+difficulty --> 8798709700p9775687677657
+
+ 4 years/ 2016 ---->
+
+
+ 50
+
+ 25
+
+210 K blocks ---> 12.5 BTC
+
+2022 ---> 6.25 BTC
+
+block reward fee for miners wil gte halved for every 210K blocks
+
+21M --- 2009
+
+18M --- 2022
+
+21M --- ?? (2140)
+
+6.25 --- 
+
+3
+
+1.5
+
+
+0.75
+
+
+2140 ----> 21M
+
+
+super/quantum --->
+
+
+EXodus installation:
+---------------------
+
+1. step1 --> try adding it to chrome extension (for some PC's it doesnt work)
+
+2. step2 --> Follow the document in lms portal for installing
+             a. https://downloads.exodus.com/releases/exodus-linux-x64-23.1.2.deb
+             b. goto downloads folder once its downloaded
+             c. right click and open terminal here
+             d. Most of the linux systems, we install applications with .deb (debian linxu) extension
+             e. sudo dpkg -i exodus-linux-x64-23.1.2.deb
+             f. sudo apt install -f
+             g. goto application launcher and type in exodus
+
+
+
+From saeed_raghib@msn.com . to Everyone 07:24 PM
+hello everyone.
+From Me to Everyone 07:25 PM
+Hello Everyone. Good Morning/Good Evening.
+From avrgayathri@gmail.com . to Everyone 07:27 PM
+Good Evening Jagadeesh
+From saeed_raghib@msn.com . to Everyone 07:28 PM
+is anyone speaking? I can't hear anything.
+yes
+From Gondi Nanda Bhavani Chaitanya . to Everyone 07:28 PM
+yes
+From gayatrisingalwar786@gmail.com . to Everyone 07:28 PM
+yes
+From mainak4ever@gmail.com . to Everyone 07:28 PM
+yes
+From varmarudraraju3 . to Everyone 07:28 PM
+Yes it is
+From Ajith to Everyone 07:28 PM
+yes
+From Aman Kumar to Everyone 07:28 PM
+yes
+From bittansari . to Everyone 07:28 PM
+yes
+From Me to Everyone 07:29 PM
+Lets wait for 2 mins and start the session at 7.30 PM. expecting few more participants.
+From saeed_raghib@msn.com . to Everyone 07:31 PM
+yes
+From girish.khemani76@gmail.com . to Everyone 07:31 PM
+yes
+From mainak4ever@gmail.com . to Everyone 07:31 PM
+yes
+From Ajith to Everyone 07:31 PM
+yes
+From mohankumardmk1997 . to Everyone 07:31 PM
+yes
+From Aman Kumar to Everyone 07:31 PM
+yes
+yes
+ok
+From vivekjamshedpur . to Everyone 07:40 PM
+is data replication is also happen?
+minimum number of replication?
+ok
+From girish.khemani76@gmail.com . to Everyone 07:40 PM
+why is anonymity so important 
+From avrgayathri@gmail.com . to Everyone 07:40 PM
+privacy perhaps?
+From saeed_raghib@msn.com . to Everyone 07:47 PM
+what happens if Hash S is missing?
+From tanwarkaku09@gmail.com . to Everyone 07:49 PM
+can u plz explain this topic clearly right now sir 
+From prakashvedv . to Everyone 07:49 PM
+How would merkel tree look like if there are odd numbers of transactions?
+From ankitdhr19@gmail.com . to Everyone 07:51 PM
+if two or more nodes solve the consensus challenge at same time and validated by other nodes then which node to be included first in the block chain
+From avrgayathri@gmail.com . to Everyone 07:58 PM
+is it possible that the sha is not generatable any more with the required signature? that is leading 10 zeros in the beginning
+From ankitdhr19@gmail.com . to Everyone 08:01 PM
+are cryptography and hash are same or they are different.
+From tanwarkaku09@gmail.com . to Everyone 08:01 PM
+can u explain with another example i can't able to understood properly 
+From zuluoscar65 . to Everyone 08:02 PM
+every miner is a node ? or miner and nodes are different?
+From Me to Everyone 08:02 PM
+https://andersbrownworth.com/Blockchain/block.html
+From avrgayathri@gmail.com . to Everyone 08:02 PM
+if calculating a nonce value is time consumig, how much time it takes for a transaction to get added to a block?
+From shreyasbt . to Everyone 08:04 PM
+Until the block is formed (which takes ~1hr), will we still be able to see all txns publicly on the txn pool at least?
+From tanwarkaku09@gmail.com . to Everyone 08:04 PM
+can u explain the puzzle block again  sir 
+From girish.khemani76@gmail.com . to Everyone 08:05 PM
+if nonce is found then successful node is free to add to its local ledger? when other nodes receive that broadcast and if they also validate it .. is it must for them to add that block to their local chain .. or can they ignore
+From prakashvedv . to Everyone 08:05 PM
+is mining pool counted as a single node?
+From mohankumardmk1997 . to Everyone 08:06 PM
+why are there different miners?.... what makes them different?
+From shreyasbt . to Everyone 08:07 PM
+How does the txn validity is established? In the sense, at what point does the txn show up on the explorer?
+From i@hitenbhatia.com . to Everyone 08:08 PM
+Do the miners choose the transaction or is it randomly assigned?
+Ok
+Get it
+From saeed_raghib@msn.com . to Everyone 08:09 PM
+what does it mean high transaction fee? is the "gas" that is spent in buying crypto?
+From girish.khemani76@gmail.com . to Everyone 08:10 PM
+so if every one must add the winning block ; then why do the chains become different
+From saeed_raghib@msn.com . to Everyone 08:10 PM
+ok, so in private chain where is the gas? what is the reward?
+From avrgayathri@gmail.com . to Everyone 08:10 PM
+private networks dont need to reward, they host the infra 
+From Me to Everyone 08:11 PM
+https://andersbrownworth.com/Blockchain/block.html
+From tanwarkaku09@gmail.com . to Everyone 08:14 PM
+hello sir 
+From Me to Everyone 08:15 PM
+pls give me 2mins
+From tanwarkaku09@gmail.com . to Everyone 08:15 PM
+ok sir 
+From saeed_raghib@msn.com . to Everyone 08:15 PM
+will the range of zeros increase or decrease if the math problem is being solved quickly by miners?
+From Hiten Bhatia to Everyone 08:15 PM
+Not audible
+From girish.khemani76@gmail.com . to Everyone 08:15 PM
+so if every one must add the winning block ; then why do the chains become different
+
+From dheerajmaske . to Everyone 08:16 PM
+nonce is directly proportional to the preceding no of zeros
+From jinsongeo . to Everyone 08:17 PM
+will all the miners be trying to create the next block with the same set of transactions
+From saeed_raghib@msn.com . to Everyone 08:18 PM
+cant hear
+From 1081btc . to Everyone 08:18 PM
+In this case who gets the gas?
+From girish.khemani76@gmail.com . to Everyone 08:19 PM
+ok
+From parveen.sahrawat1209@gmail.com . to Everyone 08:19 PM
+yes
+From avrgayathri@gmail.com . to Everyone 08:19 PM
+no it broke for a while but back
+From maananparmar@gmail.com . to Everyone 08:19 PM
+It is cracking sir
+From tanwarkaku09@gmail.com . to Everyone 08:19 PM
+yes 
+From mrneeraj03 . to Everyone 08:19 PM
+yes
+From girish.khemani76@gmail.com . to Everyone 08:19 PM
+what happens if some transactions are not getting picked in the block formation process
+From ankitdhr19@gmail.com . to Everyone 08:19 PM
+yes sir
+From saeed_raghib@msn.com . to Everyone 08:19 PM
+was fading in and out
+From avrgayathri@gmail.com . to Everyone 08:19 PM
+it was crackingmomentarily
+better now
+From dheerajmaske . to Everyone 08:19 PM
+Instead of storing the whole data what if we store the meta data(Encoded hash value )on the blockchain.Less data->small nonce->less difficulty->Faster verification->Less power consumption. Can we do this?
+From saeed_raghib@msn.com . to Everyone 08:20 PM
+where is miner 2 in this example?
+From 1081btc . to Everyone 08:20 PM
+are all transactions in a block created by one miner?
+From avrgayathri@gmail.com . to Everyone 08:20 PM
+can there be a trasnaction overlap in two blocks?
+how does it take care of not includin the same transaction in different blocks (b6/b7)
+From 1081btc . to Everyone 08:28 PM
+What is the incentive here for miners to create a block?
+From saeed_raghib@msn.com . to Everyone 08:29 PM
+what if one miner stakes 10 times as much as ETH than other miners? They could monopolize the pool.
+From girish.khemani76@gmail.com . to Everyone 08:29 PM
+Who funds the block reward in the BTC blockchain
+From gayatrisingalwar786@gmail.com . to Everyone 08:29 PM
+even before getting in the network how will they invest in it?
+From Pranav B to Everyone 08:29 PM
+so there is no nonce in proof of stake?
+From Hiten Bhatia to Everyone 08:30 PM
+How many miners are there in the Ethereum network currently? And can anyone still become a miner with the investment?
+From maverickmots@gmail.com . to Everyone 08:30 PM
+is the 32eth miner joiner fee a deposit? or its not refundable
+From Rudraraju Varma to Everyone 08:30 PM
+so every miner will have 1 incentive?
+From jinsongeo . to Everyone 08:30 PM
+in PoW, will all the miners trying to create the next block have the same set of transactions?
+From ankitdhr19@gmail.com . to Everyone 08:31 PM
+is there no geographical distance problem in creating a block transmission.Suppose someone sitting nearly great britain and one in india then there might be delay in transmission of block sitting at larger distance and the one sitting near.
+From saeed_raghib@msn.com . to Everyone 08:31 PM
+What if one miner stakes more ETH than other miners?
+Does it not create a monopoly?
+From ramanbhardwaj364@gmail.com . to Everyone 08:32 PM
+will stake of let's say 32eth will be refunded to other non-selected miners?
+From girish.khemani76@gmail.com . to Everyone 08:32 PM
+so rewards must be lower in eth blockchain compared to btc blockchain, given that there is less work involved
+From gayatrisingalwar786@gmail.com . to Everyone 08:34 PM
+so investment needs to be done to platform they are using for blockchain network?
+and then they can start mining, is it like that?
+From girish.khemani76@gmail.com . to Everyone 08:36 PM
+In POS, given that there is no central authority , who does the random selection of nodes for doing the next block creation
+From mainak4ever@gmail.com . to Me (Direct Message) 08:36 PM
+is proof of work, proof of stack and proof of stack authority different ?
+From PRATIK SHIVAJI KALE . to Everyone 08:36 PM
+is this a manual process or automatic process of miners and validation done by miners and creating the block ?
+From mainak4ever@gmail.com . to Me (Direct Message) 08:39 PM
+* proof of stake
+ok
+From ankitdhr19@gmail.com . to Everyone 08:39 PM
+whatis bitcoin bootstraped?
+From jinsongeo . to Everyone 08:39 PM
+what happens an assigned miner fails?
+From gayatrisingalwar786@gmail.com . to Everyone 08:39 PM
+sir i didn't get the thing of investing first and then mining
+From Pranav B to Everyone 08:41 PM
+can blockchain protocols can be changed later??
+From mainak4ever@gmail.com . to Me (Direct Message) 08:42 PM
+Binance uses Proof of stake authoriy , is it diffrent from proof of stake??
+From ashok.shrinivas@gmail.com . to Everyone 08:53 PM
+Not D
+From Rudraraju Varma to Everyone 08:54 PM
+in poet what hapens if 5 transactions exceeds 5 kb?
+From girish.khemani76@gmail.com . to Everyone 08:54 PM
+what do you mean algo selects the bank from the eligible bank ... Where is this algo running and who is controlling it .. given that is decentralised network
+From Satya to Everyone 08:56 PM
+what happen bank b reject txn and bank c approve the txn then bank D will approve or reject ? 
+From mohit_pu@yahoo.com . to Everyone 08:59 PM
+POET is a part of Enterprise blockchain or Public Blockchain?
+From girish.khemani76@gmail.com . to Everyone 09:01 PM
+ok
+From Aravind M to Everyone 09:02 PM
+Hi Jagadeesh,
+Two concerns:
+1. These protocols can be explained by Flowcharts  since it involves the execution of algorithms
+2. Please try to upload the recordings at least 3 hours before the next class...so that we refer to this illustration before the next lecture starts.
+From ankitdhr19@gmail.com . to Everyone 09:03 PM
+raft is same as poet or a different algorithm?
+Me to mainak4ever@gmail.com . (Direct Message) 09:06 PM
+https://andersbrownworth.com/Blockchain/distributed.html
+From tanwarkaku09@gmail.com . to Everyone 09:06 PM
+send the link sir 
+From Me to Everyone 09:07 PM
+https://andersbrownworth.com/Blockchain/distributed.html
+From 1081btc . to Everyone 09:11 PM
+why is block 2 & block 3 changing ?
+for peer a
+We changed only block 1
+Got it
+From yashdoshi51 . to Everyone 09:12 PM
+why doesnt it changes in peer 2 and 3?
+From mohankumardmk1997 . to Everyone 09:12 PM
+I think only forward blocks hash will be changed isnt it?
+From yashdoshi51 . to Everyone 09:14 PM
+got it
+so how much time does it takes to send the money in blockchain transaction from joe to mark?
+From shreyasbt . to Everyone 09:16 PM
+As per this diagram, Mark receives the money only after the block gets added to the blockchain.. so in BTC, does it take about an hour for a transfer to happen??
+From mrneeraj03 . to Everyone 09:17 PM
+how much time it takes in all process
+From dheerajmaske . to Everyone 09:17 PM
+What is the duration between  broadcasting and the formation of block?
+From Aravind M to Everyone 09:18 PM
+This depiction is expected for algorithms like Pow, Pos, etc... as well...Hope you noted it down
+The depiction of How transactions getting to Blockchain is SPOT-ON...Thanks
+From sharma.kajal.19@gmail.com . to Everyone 09:19 PM
+sir, can u plz let me knw, when we'll start the implementation 
+ with coding??
+From mohankumardmk1997 . to Everyone 09:19 PM
+sir can you explain what happens if i send another transactions at the same time with same value to another address before one transaction gets processed?
+From yashdoshi51 . to Everyone 09:19 PM
+doesnt computation takes 1-2 hours?
+From shreyasbt . to Everyone 09:19 PM
+But the diagram showed the the transfer happens only after the block is added to the chain, which isn't the case as per the explanation just now
+From Aravind M to Everyone 09:20 PM
+Its about flow chart
+Hi Jagadeesh,
+Two concerns:
+1. These protocols can be explained by Flowcharts  since it involves the execution of algorithms
+2. Please try to upload the recordings at least 3 hours before the next class...so that we refer to this illustration before the next lecture starts.
+From saeed_raghib@msn.com . to Everyone 09:21 PM
+installing wallets etc .... will it be done in the Lab VM?
+From PRATIK SHIVAJI KALE . to Everyone 09:21 PM
+Flowchart for POW, POS and POET please 
+From Satya to Everyone 09:21 PM
+RBI Central Bank Digital Currency is which kind of protocal 
+From yashdoshi51 . to Everyone 09:22 PM
+doesnt computation takes 1-2 hours?
+From Aravind M to Everyone 09:22 PM
+Before the next class starts we have to make sure these algorithms got digested....that's why...I requested for earlier upload...Thanks
+From tanwarkaku09@gmail.com . to Everyone 09:23 PM
+can u provide easy example for POS POW AND POET 
+From Me to Everyone 09:23 PM
+https://github.com/blockchaintraining90/batch5
+From PRATIK SHIVAJI KALE . to Me (Direct Message) 09:24 PM
+In terms of java coding at what extend do we need to learn ,as a new learner will we be able to understand?
+From Me to Everyone 09:25 PM
+https://blockchaintrainingalliance.com/pages/glossary-of-blockchain-terms
+https://101blockchains.com/blockchain-glossary/
+From maverickmots@gmail.com . to Everyone 09:25 PM
+somehow i cant copy any url from here
+how are others able to copy it? is there a direct zoom meeting ID?
+From jinsongeo . to Everyone 09:26 PM
+Drag and select
+From shreyasbt . to Everyone 09:26 PM
+If java is going to be used only in course 2, why is java added in prerequisites and not node.js??
+From maverickmots@gmail.com . to Everyone 09:27 PM
+cool thx Jin, worked!
+https://github.com/blockchaintraining90/batch5
+https://blockchaintrainingalliance.com/pages/glossary-of-blockchain-terms
+https://101blockchains.com/blockchain-glossary/
+From ankitdhr19@gmail.com . to Everyone 09:27 PM
+can you please elaborate about raft?
+From maverickmots@gmail.com . to Everyone 09:28 PM
+4
+From sharma.kajal.19@gmail.com . to Everyone 09:28 PM
+4
+From tanwarkaku09@gmail.com . to Everyone 09:28 PM
+b
+From PRATIK SHIVAJI KALE . to Everyone 09:28 PM
+3
+From vivekjamshedpur . to Everyone 09:28 PM
+3
+From tanwarkaku09@gmail.com . to Everyone 09:28 PM
+3
+From ankitdhr19@gmail.com . to Everyone 09:28 PM
+a
+From girish.khemani76@gmail.com . to Everyone 09:28 PM
+b
+From Pranav B to Everyone 09:28 PM
+6
+From Aman Kumar to Everyone 09:28 PM
+4
+From ankitdhr19@gmail.com . to Everyone 09:29 PM
+d
+From PRATIK SHIVAJI KALE . to Everyone 09:29 PM
+D
+From tanwarkaku09@gmail.com . to Everyone 09:29 PM
+d
+From girish.khemani76@gmail.com . to Everyone 09:29 PM
+d
+From vivekjamshedpur . to Everyone 09:29 PM
+d
+From maananparmar@gmail.com . to Everyone 09:29 PM
+b
+From PRATIK SHIVAJI KALE . to Everyone 09:29 PM
+B
+From ankitdhr19@gmail.com . to Everyone 09:29 PM
+b
+From Pranav B to Everyone 09:29 PM
+b
+From maverickmots@gmail.com . to Everyone 09:29 PM
+B
+From 1081btc . to Everyone 09:29 PM
+b
+From girish.khemani76@gmail.com . to Everyone 09:29 PM
+b
+From Pragati to Everyone 09:29 PM
+B
+From sharma.kajal.19@gmail.com . to Everyone 09:29 PM
+b
+From Aravind M to Everyone 09:29 PM
+b
+From mrneeraj03 . to Everyone 09:29 PM
+b
+From tanwarkaku09@gmail.com . to Everyone 09:29 PM
+b
+From sharma.kajal.19@gmail.com . to Everyone 09:29 PM
+a
+From ankitdhr19@gmail.com . to Everyone 09:29 PM
+a
+From Pranav B to Everyone 09:29 PM
+a
+From girish.khemani76@gmail.com . to Everyone 09:29 PM
+a
+From Pragati to Everyone 09:30 PM
+A
+From PRATIK SHIVAJI KALE . to Everyone 09:30 PM
+a
+From tanwarkaku09@gmail.com . to Everyone 09:30 PM
+a
+From Pranav B to Everyone 09:30 PM
+a
+From sharma.kajal.19@gmail.com . to Everyone 09:30 PM
+a
+From maananparmar@gmail.com . to Everyone 09:30 PM
+a
+From ankitdhr19@gmail.com . to Everyone 09:30 PM
+a
+From girish.khemani76@gmail.com . to Everyone 09:30 PM
+c
+From Pragati to Everyone 09:30 PM
+A
+From PRATIK SHIVAJI KALE . to Everyone 09:30 PM
+D
+From tanwarkaku09@gmail.com . to Everyone 09:30 PM
+d
+From mohit_pu@yahoo.com . to Everyone 09:30 PM
+d
+From maverickmots@gmail.com . to Everyone 09:31 PM
+20 mins break please
+From tanwarkaku09@gmail.com . to Everyone 09:31 PM
+30 min 
+From maverickmots@gmail.com . to Everyone 09:31 PM
+*i meant dont make it 30
+my local time is 00:00
+From ankitdhr19@gmail.com . to Everyone 09:31 PM
+are cryptography and hash same or different?
+From tanwarkaku09@gmail.com . to Everyone 09:31 PM
+ok 
+From maverickmots@gmail.com . to Everyone 09:32 PM
+thank you!
+From ankitdhr19@gmail.com . to Everyone 09:32 PM
+ok.
+From Me to Everyone 09:32 PM
+lets meet in next 20mins
+From vivekjamshedpur . to Everyone 09:32 PM
+thank you!
+From Me to Everyone 09:32 PM
+we can break now
+From tanwarkaku09@gmail.com . to Everyone 09:33 PM
+set the timer sir 
+now 
+From dheerajmaske . to Everyone 09:33 PM
+PLease unmute me ,I have a doubt
+From maverickmots@gmail.com . to Everyone 09:35 PM
+by the way, if anyone wants to join the whatsapp group (optional), here's the link
+
+https://chat.whatsapp.com/E3eWCooBrVzBoIkEFM2BHv
+From Learner Success Manager to Everyone 09:40 PM
+We at Simplilearn, do not encourage sharing personal information and the creation of WhatsApp groups. Please exercise caution while sharing your personal information. 
+Simplilearn shall not be responsible for any privacy issues
+
+please donot create any whatsapp groups
+From maverickmots@gmail.com . to Everyone 09:43 PM
+noted on your msg admin, but its only to quickly connect and discuss about the lessons with peers
+From Learner Success Manager to Everyone 09:45 PM
+use the community forum for your discussions
+From maverickmots@gmail.com . to Everyone 09:47 PM
+that is why i mentioned quickly :)
+*quickly connect
+From yashdoshi51 . to Everyone 09:50 PM
+has lecture started?
+From ramanbhardwaj364@gmail.com . to Everyone 09:51 PM
+not yet
+From Learner Success Manager to Everyone 09:52 PM
+not yet
+From maverickmots@gmail.com . to Everyone 09:53 PM
+bk
+From mainak4ever@gmail.com . to Everyone 09:53 PM
+yes
+From skyaseenmuskan03370 . to Everyone 09:53 PM
+yes
+From ypurohit988@gmail.com . to Everyone 09:53 PM
+yes
+From i@hitenbhatia.com . to Everyone 09:53 PM
+ok
+From ankitdhr19@gmail.com . to Everyone 09:53 PM
+yes
+From ramanbhardwaj364@gmail.com . to Everyone 09:53 PM
+back!
+From saeed_raghib@msn.com . to Everyone 09:55 PM
+what about the last slide of the previous slide deck?
+From PRATIK SHIVAJI KALE . to Everyone 09:56 PM
+we suppose to Create Blockchain Network ? from last deck
+From maverickmots@gmail.com . to Everyone 09:58 PM
+we discussed about building a blockchain network after break
+From mrneeraj03 . to Everyone 09:59 PM
+sir i am not any recoded session
+recorded
+From Me to Everyone 09:59 PM
+https://blockchaindemo.io/
+From PRATIK SHIVAJI KALE . to Everyone 10:00 PM
+Yes 
+From mainak4ever@gmail.com . to Everyone 10:00 PM
+yes
+From ypurohit988@gmail.com . to Everyone 10:00 PM
+yes
+From vivekjamshedpur . to Everyone 10:00 PM
+yes
+From yashdoshi51 . to Everyone 10:00 PM
+yes
+From Aravind M to Everyone 10:00 PM
+yes
+From 1081btc . to Everyone 10:02 PM
+Is Elon Musk Satoshi ?
+From maverickmots@gmail.com . to Everyone 10:02 PM
+how can we define that the hash should have 5 preappended zeros?
+From i@hitenbhatia.com . to Everyone 10:02 PM
+LOL
+From saeed_raghib@msn.com . to Everyone 10:02 PM
+lol
+From i@hitenbhatia.com . to Everyone 10:03 PM
+He is the opposite of Satoshi Nakamoto
+From girish.khemani76@gmail.com . to Everyone 10:03 PM
+:)
+From jinsongeo . to Everyone 10:04 PM
+He will release Blockchain Blue
+From maverickmots@gmail.com . to Everyone 10:04 PM
+haha true! just a hyped narcissisit imo
+From i@hitenbhatia.com . to Everyone 10:04 PM
+🤭
+From vivekjamshedpur . to Everyone 10:04 PM
+what is add peer
+From tanwarkaku09@gmail.com . to Everyone 10:07 PM
+hello sir 
+i want id 
+hello sir 
+notes pad 
+yes 
+i want to create block 
+that  y 
+From ypurohit988@gmail.com . to Everyone 10:07 PM
+yes 
+From Me to Everyone 10:07 PM
+{txn1 - > trasfer 5 btc to user b}, {txn2--> transfer 10 btc to userc"
+From Aravind M to Everyone 10:08 PM
+do you follow any syntax here
+From 1081btc . to Everyone 10:08 PM
+I used to think Donald Trump owns Disney :)
+From saeed_raghib@msn.com . to Everyone 10:09 PM
+nonce value of 2 is smaller than block 1?
+From Aravind M to Everyone 10:09 PM
+above text don't have ending curly brace
+got it
+From jinsongeo . to Everyone 10:09 PM
+In real world, there will be multiple transactions in a block
+From ankitdhr19@gmail.com . to Everyone 10:09 PM
+are cryptography and hash are same or they are different?
+From ashok.shrinivas@gmail.com . to Everyone 10:10 PM
+they are different
+From jinsongeo . to Everyone 10:10 PM
+Here the hash puzzle is to append 3 zeros to the hash
+From ankitdhr19@gmail.com . to Everyone 10:13 PM
+understand sir.
+yes sir
+From mrneeraj03 . to Everyone 10:14 PM
+how to add peer
+From Pranav B to Everyone 10:14 PM
+how are peers added in real world
+From Rudraraju Varma to Everyone 10:14 PM
+once a peer is added shoul ot not the existing the data in peer1 be distributed?
+From tanwarkaku09@gmail.com . to Everyone 10:15 PM
+if we have to enter our own name so what to do sir 
+it can be possible sir 
+From jinsongeo . to Everyone 10:16 PM
+can we upgrade the transaction schema for an active blockchain?
+From tanwarkaku09@gmail.com . to Everyone 10:17 PM
+ok 
+From yashdoshi51 . to Everyone 10:20 PM
+bank 2 uploaded different data, so how did both had same data after sync?
+From girish.khemani76@gmail.com . to Everyone 10:21 PM
+why is same transaction not picked by 2 or more miners ... Every miner is working in parallel, so these overlap could happen
+From ankitdhr19@gmail.com . to Everyone 10:22 PM
+like genesis block is there any terminating block?
+From jinsongeo . to Everyone 10:23 PM
+can you please scroll down for Chris?
+From tanwarkaku09@gmail.com . to Everyone 10:23 PM
+after peering at both the bank's data the can recorrect the data present in block 
+From saeed_raghib@msn.com . to Everyone 10:23 PM
+is the syncing process creating pointers to same blockchain for all 3 peers?
+From tanwarkaku09@gmail.com . to Everyone 10:24 PM
+ans my q 
+From saeed_raghib@msn.com . to Everyone 10:24 PM
+or is it actually 3 copies?
+From Satya to Everyone 10:24 PM
+more txn addeded to each peers and all peers got syn however new added syn peers are deleted then also actual peers have all txn added  
+From tanwarkaku09@gmail.com . to Everyone 10:24 PM
+sir 
+From jinsongeo . to Everyone 10:24 PM
+shouldnt chris be getting the blocks from satoshi too?
+From yashdoshi51 . to Everyone 10:26 PM
+sir, but data of banks remain same even after syncing?
+like block 1 of bank 1 is stills same 
+From ypurohit988@gmail.com . to Everyone 10:29 PM
+yes
+From ankitdhr19@gmail.com . to Everyone 10:29 PM
+yes sir
+From yashdoshi51 . to Everyone 10:29 PM
+yes
+From Satya to Everyone 10:29 PM
+yes
+From Aman Kumar to Everyone 10:29 PM
+yes
+From tanwarkaku09@gmail.com . to Everyone 10:29 PM
+yes 
+From bittansari . to Everyone 10:29 PM
+yes
+From Pranav B to Everyone 10:29 PM
+yes sir
+From maananparmar@gmail.com . to Everyone 10:29 PM
+yes sir
+From ramanbhardwaj364@gmail.com . to Everyone 10:29 PM
+clear!
+From zuluoscar65 . to Everyone 10:29 PM
+yes sir
+yes sir
+From vivekjamshedpur . to Everyone 10:30 PM
+where can we find that white paper
+From maverickmots@gmail.com . to Everyone 10:31 PM
+https://bitcoin.org/bitcoin.pdf
+From vivekjamshedpur . to Everyone 10:31 PM
+thanks
+From saeed_raghib@msn.com . to Everyone 10:35 PM
+slide 8: does the difficulty rate mean number of zeros being increased or decreased?
+thanks
+From 1081btc . to Everyone 10:35 PM
+So it would take 2100 to get to 21Million
+From saeed_raghib@msn.com . to Everyone 10:36 PM
+so it was 12.5 btc before?
+From maverickmots@gmail.com . to Everyone 10:36 PM
+does it get to a point that the difficulty is so high its nearly imposible to generate the hash with any nonce? 
+From saeed_raghib@msn.com . to Everyone 10:37 PM
+how many btc are remaining
+From Pranav B to Everyone 10:39 PM
+How is bitcoin currency value established??
+From 1081btc . to Everyone 10:39 PM
+One guy spent 20BTC in 2007 to purchase coffee
+From maverickmots@gmail.com . to Everyone 10:39 PM
+and one hguy bought a Lambhorgine from 60 btc in ~2018
+From 1081btc . to Everyone 10:40 PM
+2180
+From vivekjamshedpur . to Everyone 10:40 PM
+2023
+From prakashvedv . to Everyone 10:40 PM
+2040
+From mrneeraj03 . to Everyone 10:40 PM
+2023
+From maverickmots@gmail.com . to Everyone 10:41 PM
+2018 i meant
+https://www.cnbc.com/2018/02/07/bitcoin-millionaires-are-buying-lamborghinis-with-cryptocurrency.html
+From 1081btc . to Everyone 10:43 PM
+exponential ^Moore's law
+From maverickmots@gmail.com . to Everyone 10:43 PM
+got it, thank you
+From jinsongeo . to Everyone 10:43 PM
+What would be the source of BTC for BTC Exchanges
+From PRATIK SHIVAJI KALE . to Everyone 10:46 PM
+what does it mean mining out all bit coins?
+From ankitdhr19@gmail.com . to Everyone 10:48 PM
+sir can you explain ellyptical curve digital signature algorithm please?
+From tanwarkaku09@gmail.com . to Everyone 10:49 PM
+ok 
+From 1081btc . to Everyone 10:51 PM
+Ledger
+From maverickmots@gmail.com . to Everyone 10:51 PM
+does the exchange not provide a wallet to store the transaction keys?
+From saeed_raghib@msn.com . to Everyone 10:55 PM
+yes
+From imkushsinha . to Everyone 10:55 PM
+NO
+From ankitdhr19@gmail.com . to Everyone 10:55 PM
+yes sir
+From Me to Everyone 10:55 PM
+4.1 / 4.3
+From saeed_raghib@msn.com . to Everyone 10:55 PM
+4.3
+From PRATIK SHIVAJI KALE . to Everyone 10:56 PM
+yes
+From tanwarkaku09@gmail.com . to Everyone 10:57 PM
+in lab which one we have to use 
+web console 
+From saeed_raghib@msn.com . to Everyone 10:57 PM
+i also have tab "Blockchain Lab New" 
+From tanwarkaku09@gmail.com . to Everyone 10:57 PM
+or rdp
+From mohit_pu@yahoo.com . to Everyone 10:57 PM
+We have three diffrerent lab nodes 
+From maverickmots@gmail.com . to Everyone 10:58 PM
+for lesson 4, I see it only in section 2  under HyperLedger Fabric SDK
+From mohit_pu@yahoo.com . to Everyone 10:58 PM
+it is asking for 8 mins
+From Aman Kumar to Everyone 11:00 PM
+I got username password and auth URL
+From Pranav B to Everyone 11:00 PM
+in section 2
+From saeed_raghib@msn.com . to Everyone 11:00 PM
+its in section 2
+From ankitdhr19@gmail.com . to Everyone 11:00 PM
+i have completed all the 13 lectures of lession 1 sir.
+From Me to Everyone 11:01 PM
+https://lms.simplilearn.com/courses/4190/PG-BC-Fundamentals-of-Blockchain/syllabus
+From Rudraraju Varma to Everyone 11:01 PM
+i did not get a prompt?
+From mohit_pu@yahoo.com . to Everyone 11:02 PM
+we need to go RDp
+From zuluoscar65 . to Everyone 11:02 PM
+no
+From PRATIK SHIVAJI KALE . to Everyone 11:02 PM
+yes
+From vivekjamshedpur . to Everyone 11:02 PM
+no
+From tanwarkaku09@gmail.com . to Everyone 11:02 PM
+no sir
+From saeed_raghib@msn.com . to Everyone 11:02 PM
+yes
+From Rudraraju Varma to Everyone 11:02 PM
+No
+From mainak4ever@gmail.com . to Everyone 11:02 PM
+yes
+From mrneeraj03 . to Everyone 11:02 PM
+not got
+From Aman Kumar to Everyone 11:02 PM
+got it
+From tanwarkaku09@gmail.com . to Everyone 11:02 PM
+where we have to clck 
+From Aravind M to Everyone 11:03 PM
+yep the virtual machine is accessible via RDP
+From ankitdhr19@gmail.com . to Everyone 11:03 PM
+yes sir i reached to the page.
+From mohit_pu@yahoo.com . to Everyone 11:03 PM
+in the lab 
+From Rudraraju Varma to Everyone 11:03 PM
+i do not see auth url
+From ashok.shrinivas@gmail.com . to Everyone 11:04 PM
+remote desktop server is currently unreachable. If the problem persists, please notify your system administrator, 
+From mrneeraj03 . to Everyone 11:04 PM
+sir not got any thing
+From maverickmots@gmail.com . to Everyone 11:04 PM
+The lab environment is currently in Stopped state, so the access is suspended. Cannot connect to the lab environment until it is started. Please click on Start Instance to wake up the environment.
+From zuluoscar65 . to Everyone 11:04 PM
+in it 
+ok sir got it
+From mrneeraj03 . to Everyone 11:04 PM
+could you do with sharing screen
+From maverickmots@gmail.com . to Everyone 11:05 PM
+got it, thank you
+visible
+From mohit_pu@yahoo.com . to Everyone 11:05 PM
+yes
+your screen is visible 
+From maverickmots@gmail.com . to Everyone 11:05 PM
+difficult to see if were opening lab in another tab
+From mrneeraj03 . to Everyone 11:05 PM
+take my screen
+From vivekjamshedpur . to Everyone 11:05 PM
+visible
+From jinsongeo . to Everyone 11:05 PM
+which is the project that we need to do now?
+From Pragati to Everyone 11:05 PM
+It shows Connection error.
+From mrneeraj03 . to Everyone 11:05 PM
+no
+where
+From Pragati to Everyone 11:06 PM
+okay its visible now
+From Me to Everyone 11:06 PM
+https://lms.simplilearn.com/courses/4190/PG-BC-Fundamentals-of-Blockchain/practice-labs
+From ypurohit988@gmail.com . to Everyone 11:08 PM
+I'm getting connection error prompt 
+It's showing remote desktop is unreachable
+From vivekjamshedpur . to Everyone 11:08 PM
+asking me keyring
+From saeed_raghib@msn.com . to Everyone 11:08 PM
+how to copy link from step 1 and paste into the lab vm. "Copy" not working.
+From mrneeraj03 . to Everyone 11:09 PM
+not opening
+From saeed_raghib@msn.com . to Everyone 11:09 PM
+copy past not transferring from doc to vm. i typed it 
+From zuluoscar65 . to Everyone 11:09 PM
+shall we download the software n install it in lab?
+From Pragati to Everyone 11:11 PM
+what to type for password for new keyring
+From Rudraraju Varma to Everyone 11:11 PM
+i where is browser in lab?
+From maverickmots@gmail.com . to Everyone 11:11 PM
+no not able to download
+From vivekjamshedpur . to Everyone 11:11 PM
+yes
+From Aman Kumar to Everyone 11:11 PM
+no
+From mainak4ever@gmail.com . to Everyone 11:11 PM
+the lab is lagging a lot
+From zuluoscar65 . to Everyone 11:11 PM
+stuck
+From Kaleemulla Mohammed . to Everyone 11:12 PM
+Not getting drop down
+From vivekjamshedpur . to Everyone 11:12 PM
+should we download .deb
+From mohit_pu@yahoo.com . to Everyone 11:12 PM
+mine deb file is dowloaded
+From maverickmots@gmail.com . to Everyone 11:12 PM
+in your browser, it shows download paused..seems it was downloading for you
+From maananparmar@gmail.com . to Everyone 11:12 PM
+can we use ubantu in VMware?
+From maverickmots@gmail.com . to Everyone 11:12 PM
+@Jagadeesh
+From 1081btc . to Everyone 11:13 PM
+They have halted the download of Desktop app until 16th Jan
+From jinsongeo . to Everyone 11:13 PM
+expand the dropdown under desktop
+From vivekjamshedpur . to Everyone 11:13 PM
+i am geeting it
+From zuluoscar65 . to Everyone 11:13 PM
+its says the website "the next desktop version will be available on 16 jan" 
+From jinsongeo . to Everyone 11:13 PM
+we will get options for dep and zip
+From Aravind M to Everyone 11:15 PM
+The desktop I own is installed with ubuntu
+and from my desktop I am able to download but 
+not from RDP
+That's what I want to tell Within lab its not working
+From saeed_raghib@msn.com . to Everyone 11:15 PM
+it does not work in lab vm.
+From ashok.shrinivas@gmail.com . to Everyone 11:15 PM
+go to this url - https://downloads.exodus.com/releases/exodus-linux-x64-23.1.2.deb
+From mohit_pu@yahoo.com . to Everyone 11:15 PM
+I cant unzip the folder of deb
+From saeed_raghib@msn.com . to Everyone 11:15 PM
+i am able to click it on my own laptop
+From zuluoscar65 . to Everyone 11:15 PM
+as a wallet i already have metamask in brave browser as a ext.
+From Pragati to Everyone 11:15 PM
+It is not showing the option in the lab but otherwise it is.
+From Me to Everyone 11:16 PM
+https://downloads.exodus.com/releases/exodus-linux-x64-23.1.2.deb
+From ypurohit988@gmail.com . to Everyone 11:16 PM
+Now its showing this - An internal error has occurred within the Guacamole server
+From Pragati to Everyone 11:16 PM
+should we download on chrome or linux !?
+From saeed_raghib@msn.com . to Everyone 11:16 PM
+maybe some other wallet?
+From zuluoscar65 . to Everyone 11:17 PM
+ok sir
+From Me to Everyone 11:17 PM
+exodus with chrome extension is better, please access it outside lab
+From saeed_raghib@msn.com . to Everyone 11:18 PM
+i am confused.
+is it exodus or chrome extension?
+From maverickmots@gmail.com . to Everyone 11:19 PM
+This application is not supported on this computer. Installation has been disabled. The following problems are detected:
+Chrome of version at least 100 is required
+i get this for chrome extension
+https://chrome.google.com/webstore/detail/exodus-web3-wallet/aholpfdialjgjfhomihkjbmgjidlcdno
+From vivekjamshedpur . to Everyone 11:21 PM
+i am able to install exodus in lab
+From saeed_raghib@msn.com . to Everyone 11:25 PM
+for exodus chrome I get: 
+This application is not supported on this computer. Installation has been disabled. The following problems are detected:
+Chrome of version at least 100 is required
+I get "Not compatible" message: Description is: This application is not supported on this computer. Installation has been disabled. The following problems are detected:
+Chrome of version at least 100 is required
+can u add the message in the chat?
+please?
+can you add the download link in the chat, please?
+From Me to Everyone 11:28 PM
+https://downloads.exodus.com/releases/exodus-linux-x64-23.1.2.deb
+1. step1 --> try adding it to chrome extension (for some PC's it doesnt work)
+
+2. step2 --> Follow the document in lms portal for installing
+             a. https://downloads.exodus.com/releases/exodus-linux-x64-23.1.2.deb
+             b. goto downloads folder once its downloaded
+             c. right click and open terminal here
+             d. Most of the linux systems, we install applications with .deb (debian linxu) extension
+             e. sudo dpkg -i exodus-linux-x64-23.1.2.deb
+             f. sudo apt install -f
+             g. goto application launcher and type in exodus
+From Aravind M to Everyone 11:28 PM
+Yep able to see exodus wallet as desktop application at both in side lab and outside lab
+From saeed_raghib@msn.com . to Everyone 11:33 PM
+thanks
+the document shows ABSOLUTE_PATH
+in step 1.6
+got it. yes
+From Aman Kumar to Everyone 11:33 PM
+yes
+From zuluoscar65 . to Everyone 11:33 PM
+yes
+From vivekjamshedpur . to Everyone 11:33 PM
+yes
+From mohit_pu@yahoo.com . to Everyone 11:34 PM
+done
+From zuluoscar65 . to Everyone 11:34 PM
+i undertood but not able to download in lab
+From ankitdhr19@gmail.com . to Everyone 11:34 PM
+what is bitcoin bootstrap sir?
+From saeed_raghib@msn.com . to Everyone 11:34 PM
+how to fix copy/paste from laptop to lab VM?
+From tanwarkaku09@gmail.com . to Everyone 11:35 PM
+we can leave the meeting 
+From zuluoscar65 . to Everyone 11:35 PM
+yes
+From mrneeraj03 . to Everyone 11:35 PM
+yes
+From zuluoscar65 . to Everyone 11:35 PM
+yes
+From Aman Kumar to Everyone 11:35 PM
+I am having question at last, do we are going to learn solana as wel or only solody?
+From ashok.shrinivas@gmail.com . to Everyone 11:35 PM
+copy paste worked for me
+From saeed_raghib@msn.com . to Everyone 11:35 PM
+I tried that
+did not work
+From Pragati to Everyone 11:35 PM
+the right click option doesn't show " open terminal "
+From ankitdhr19@gmail.com . to Everyone 11:35 PM
+copy paste working
+From 1081btc . to Everyone 11:36 PM
+Its asking for password authentication
+From Aman Kumar to Everyone 11:36 PM
+ok
+From Kaleemulla Mohammed . to Everyone 11:36 PM
+Tried but didn’t work, so I manually typed and installed via terminal
+From 1081btc . to Everyone 11:36 PM
+unsuccessful
+From tanwarkaku09@gmail.com . to Everyone 11:36 PM
+we can leave it if its over
+From Aman Kumar to Everyone 11:36 PM
+so do we learn each and everything about solidity writing smart contract and deploying it 
+From zuluoscar65 . to Everyone 11:37 PM
+not possible via notepad sir
+From saeed_raghib@msn.com . to Everyone 11:37 PM
+is there a permission in vm that needs to be fixed for copy/paste?
+From Aman Kumar to Everyone 11:37 PM
+so can we leave now?
+Me to Learner Success Manager (Direct Message) 11:37 PM
+Hi
+we are done with session. u want to send the feedback link ?
+From Learner Success Manager to Everyone 11:38 PM
+https://lms.simplilearn.com/nps/session/637cdd6fbe655b674ae89113/1673704800000/95831117895/zoom
+From Me to Everyone 11:38 PM
+https://github.com/blockchaintraining90/batch5
+From ankitdhr19@gmail.com . to Everyone 11:38 PM
+thank you sir once again for a nice session.
+From vivekjamshedpur . to Everyone 11:38 PM
+Thank you Jagadeesh. good night
+From jinsongeo . to Everyone 11:38 PM
+thank you
+From Pranav B to Everyone 11:38 PM
+Thank you
+From Learner Success Manager to Everyone 11:39 PM
+https://lms.simplilearn.com/nps/session/637cdd6fbe655b674ae89113/1673704800000/95831117895/zoom
+
+From zuluoscar65 . to Everyone 11:39 PM
+thanks sir
+From Me to Everyone 11:39 PM
+Thank you everyone. Have a nice day.
+
+
+
+

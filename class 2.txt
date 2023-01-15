@@ -1,0 +1,947 @@
+There would still be data level security .. Transactions between ICICI and SBI may not be visible to other banks for example?
+From ramanbhardwaj364@gmail.com . to Everyone 08:35 PM
+when same data copies are  stored  across the server, that must be expensive for storage space.??
+decentralized exchange aka dex 
+money remains in our wallet
+does not goes to a centralised wallet like zebpay
+From girish.khemani76@gmail.com . to Everyone 08:57 PM
+how do dispute/conflict management happen amongst blockchain participants
+From varmarudraraju3 . to Everyone 09:13 PM
+does the block have inheritance?
+From Mainak Mitra to Me (Direct Message) 09:29 PM
+Bocks are immutable right ?? so how no. of bitcoins in genesis block be updated??
+
+
+From maverickmots@gmail.com . to Everyone 10:27 PM
+how does the other nodes sync up? are there not conflicts between the nodes?
+is there not race condition between the nodes?
+From girish.khemani76@gmail.com . to Everyone 11:06 PM
+This must incur high admin costs, the moment a new node or party is added , that many interconnections would need to be maintained
+From 1081btc . to Everyone 11:08 PM
+Bur A regulator and rules of visibility will beat the very purpose of enterprise blockchain ?
+From saeed_raghib@msn.com . to Everyone 11:25 PM
+slide 39: what about energy utilization? as in processing by miners?
+From girish.khemani76@gmail.com . to Everyone 11:25 PM
+Is there any standardization of APIs/technical interfaces across various blockchain types and implementations
+From Hiten Bhatia to Everyone 11:35 PM
+Can we create a slack community?
+
+
+
+
+Data Privacy: Private data fields ---> pan, ssn ----> privte data {89jkjhhih98098jj} ----> ledger
+
+ public - ZKP
+ private/permissioned -- private
+
+
+Data Isolation:
+ 
+ hash of the txn --> hash
+ original txn - DB
+
+compute hash of original txn ---> hash1 
+ if hash1 = hash
+
+Data Archival: large data and network may blowup
+
+ 1. data archival
+ 2. data snapshot
+
+1 - 2 - 3- 4- ----- 1000000 ---> 100 GB --> 2 yrs
+ hash of these 100 blocks ----> signle derived hash ----
+ hiuhiugiuh098-0909----- blocks
+
+snapshot ---> hash ++++++ blocks
+
+
+1 large entity --> 
+
+onchain DB  --- ledger
+offchain DB --- Databases
+
+new snapshothash --- block 101
+
+100 block -- external disk/hard drives/databses
+
+
+
+func createGenesis(txn) block
+{
+
+
+
+}
+
+func Actualblocks(txn, (snaphash) prev hash) block {
+
+new block
+}
+
+func Snapshot(block) snaphash
+
+
+{
+
+
+snaphash
+
+}
+
+
+
+
+without cryptgraphy:
+
+ user a --> 100 $ ---> user b
+
+ txn (from:user a, to:user c, value:100)
+
+
+
+with cryptography:
+ 
+ user a --> 100 $ ---> user b
+
+ txn (from:user a, to:user b, value:100)
+
+encrypt (txn) ---> joijio9870987-987-jbjbj098-08 ---> decrypt ----> original message
+
+encryption/decyrpt ---> two way --> RSA -- 256, 512, , ECDSA - 256, 512, AES - 256, 512, 1024 
+hash ---> one way  --> SHA 256, SHA 512, MD5, RIPEMD 160
+
+symetric : user a and user b agree and share the same key --> not secure --> joint accounts
+
+asymmetric : 
+
+ for every user/transaction --- a keypair is generated (public key, private key)
+
+ user a - pubkeyA, privkeyA
+
+ user b - pubkeyB, privkeyB
+
+
+applicationlevel:
+
+ user a --> net banking
+ nt banking ---> pubkey, privkey --->
+ 100 $ to user b 
+txn (usera, 100, userb) ---> using pub key of user b
+
+
+ user b (pub, priv) --> decoded with priv key of user b
+  ---> 100
+  ->
+
+Instead of using recepient pub key to encrypt if we use SENDER private ky to encrypt we call it as digital signature
+
+
+sender usera (65, 94)  (102, 57)
+
+recepient userb (41, 118) (109, 50)
+
+
+1 sender to multiple recepinets
+
+ sender sign with his private key, so that others can decrypt with senders public key
+
+
+hi from simpli learn - 64f7fc4fa711c458fa267e2373b336cd29890af388f0fde6ebe786e32feac355
+hi from simpli learN - d26edd33c0bc435c4bd6abf638d05e38345e609a96a661a464069726ff314f80
+                       28fe63ba0d0166b68788ca3ea44a0a00f6b1d6d37bcad2128d422d42cb7a287dd9f87e77282d00e61c29d1e6a842bbf8fab5f1cac657d2cee4f0fb5f11f5924b 
+
+
+to maintain integrity and secure of message : use both encryption + Hashing
+
+ (user a ---> hello ----> user b)
+
+1. encrypt the message with user a private key ---> 87987njkjhijhij
+2. calc the hash of input message              ---> d26edd33c0bc435c4bd6abf638d05e38345e609a96a661a464069726ff314f80 
+
+3. the transaction has now (input message + encryption , hash value)
+
+recepient will decrypt the original message 
+  87987njkjhijhij ---> user a pubic key ---> hello 
+  comput the hash of input ---> d26edd33c0bc435c4bd6abf638d05e38345e609a96a661a464069726ff314f80 
+  transaction also includes hash  ---> if hash calculated == hash received in the transaction
+
+
+
+10 transactions in a block:
+
+header 
+  previous hash    ----->
+  merkel root hash ----->
+
+body
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+hash(9,10) hash(7,8) ----- hash(1,2)
+ hash(9,10,7,8) --- hash (1,2,3,4)
+ hash(9,10,7,8,6,----1,2,3,4)  ====> single root hash is created
+
+7,6,5,4,3,2,1
+
+ hash (7,6) hash (5,4) hash(3,2) hash(1)
+ hash (7,6,5,4) hash (3,2,1)
+ hash (7,6,5,4,3,2,1) ----> merkle root hash
+
+hash(1,2,3,.....10) ---> hash is not so complex
+
+
+
+ Block size --->   < 4 KB
+
+
+block1 --- block2 -- block3 ---
+
+
+100 txn 
+
+
+10 block1  2kb
+15 2       2kb
+25 block3  2kb 
+
+
+
+2000 blocks ---> 150 gb
+
+snapshot ----> 2000 blokcs ----> snapshot hash 
+
+new blocks from this point ---> snapshot hash and create from this point
+
+
+
+
+to create blocks:
+
+ 1. fill block size of 2 kb
+ 2. fill 10 transactions 
+
+8 txns ---> 2kb
+
+
+9 txns ----> 1kb
+10 txn ----> 1.2 kb
+
+
+Snapshotting:
+
+ 1. either the network participants/entities
+ 2. individual entities
+
+Intermittent transactions:
+--------------------------
+
+ 1. Public     ----> transaction pool servers ( 100/200 nodes )
+ 2. Private    ----> intermitent servers/databses (admin/network operator)
+ 3. Enterprise ----> stored in distributed databases (cassandra/couch db/rocks db etc)
+
+
+
+100 servers:
+-------------
+
+S1 ---> 1 2 3 4 5 ----> Block1 {1 2 3 4 5}
+
+S2 ---> 7 8 9 10  ----> Block1 { 7 8 9 10}
+
+S3 ---> 11 12 13 14  ---> Block { 11 12 13 14}
+
+consensus establishes agreement b/w diff nodes on how to store the data(order of data)
+
+
+block1 --- {1 7 8 11 12}
+block2 ---- {2 3 9}
+block3 ---- {4 5 10}
+block4 -- {13 14}
+
+
+Public blockchains -- consessus is executed at Miner level
+
+Enterprise blockahins -- executed at smart contract
+
+
+commnder --> attack [general 1, 2, 3]
+
+general1 ---> attack [commander, gen2, 3]
+
+general 2 ---> attack [commander, gen1, 3]
+
+general 3 ---> attack[commander, gen1] no attack [gen 2]
+
+commander : [3,0]
+
+func Consensus (msg1, msg2)
+ {
+   msg1 = 4    // attack
+   msg2 = 0    // no attack
+
+}
+
+general1: [3, 0]
+
+general2: [3, 1] ---> [3,0]
+
+block1 {jfiofhiw}
+
+general3: [4,0] ---> remove thi node from network
+
+
+
+miners [ 1 2 3 4 5 ]
+
+ { 1 2 3 .. . . . 100 }
+
+ there will be multiple miners with diff transactions included for a single block
+
+ miner 1 - { 1 2 3 4 5  } 2023-01-08.22.30 
+ miner 2 - { 1 2 3 5 7  } 2023-01-08.22.30
+ miner 3 - { 9 2 3 10 5 } 2023-01-08.22.30
+
+
+
+ only 1 can create a block at anytime and others will validate the block and transactions
+
+
+
+POW requires miner nodes to solve a mathemaical puzzle
+
+  1. computing a random value ( nonce ) to calculate a hash value of transactions with prefix no of zeros
+
+  Miner1 to create block 1 ---- { 1 2 3 4 5 }
+
+ level    1. validates these 5 transactions --- easy step [ 1 2 3 4 5]
+ level    2. computes hash of these transactions (is easy to compute hash from input) -- 909798jbjkbhbhbhb9809809 --> easy step [ 1 2 3 4 5 ]
+ level    3. puzzle is to apend/prefix 10 zeros to the hash value computed in step2   -- 0000000000+909798jbjkbhbhbhb9809809 
+ level    4. send to other miners for validation
+
+
+
+b1de0741eb1b2ae83830e6a677b126c5
+0b1de0741eb1b2ae83830e6a677b126c5
+909798jbjkbhbhbhb9809809 + random number =====> 0000000000+909798jbjkbhbhbhb9809809 -----> difficult step
+
+they need machines/servers which can computed Exa hash per second ==> 10 ^ 12 ===> 1-2 hours / 15-30 min
+
+ finding input from given output is very difficult for hashing algorithm
+
+for (i=0; i<9999999999999999999999; i++)
+
+  {
+         hash (input) + 999879889789 = 0000000000+909798jbjkbhbhbhb9809809
+ 10 ^ 9
+
+  }
+
+bloc1 - 2,233,697,616, 
+
+0000000000 --- difficulty factor (10 zeros) 2009
+ 2023 ---> 10 ^ 6/9
+
+=====> Public blockchains -- bitcoin/ethereum/solna ---- POW/POS (mining, crypo currency, transaction fee, mining fee etc)
+
+=====> RAFT protocol for consensus for enterprise use cases
+
+
+34,093,570,325,203.84
+Nonce
+2,233,697,616
+
+
+34,093,570,325,203.84
+Nonce
+1,642,721,893
+
+
+each n evry transaction that user performs it has transaction fee involved
+miners txn high fee value
+
+ 1 btc ----- 20
+ 10  --- 3
+ 100 ---1
+
+
+
+
+
+
+pool1 -- 100 miners ---> distribute rewrad among themself
+
+pool2 -- 150 miners ---> 
+
+
+
+
+Me to Faculty 101 (Direct Message) 07:27 PM
+Hi. Screen share is not yet enabled for me. can u pls give me the rights.
+From tanwarkaku09@gmail.com . to Everyone 07:28 PM
+hello 
+good evening sir 
+From Me to Everyone 07:28 PM
+Hello Everyone. Good Morning/Evening. Lets start the session in next 2mins.
+From girish.khemani76@gmail.com . to Everyone 07:29 PM
+Hello Jagadeesh, Hi all
+yes
+From tanwarkaku09@gmail.com . to Everyone 07:29 PM
+ok sir 
+From jinsongeo . to Everyone 07:30 PM
+Good evening!
+From Mainak Mitra to Everyone 07:30 PM
+yes
+From yashdoshi51 . to Everyone 07:30 PM
+yes
+From Pragati  to Everyone 07:30 PM
+yes
+From mrneeraj03 . to Everyone 07:30 PM
+clear
+From yashdoshi51 . to Everyone 07:30 PM
+yes
+From varmarudraraju3 . to Everyone 07:30 PM
+Yes
+From mrneeraj03 . to Everyone 07:30 PM
+visible
+From jinsongeo . to Everyone 07:30 PM
+screen is clear
+From ankitdhr19@gmail.com . to Everyone 07:32 PM
+hello friends and good eve jagadeesh sir
+From zuluoscar65 . to Everyone 07:40 PM
+is Merkle tree is also associated with it sir?
+From dheeraj.kakara@gmail.com . to Everyone 07:45 PM
+are these content's pdfs will be shared ?
+From ankitdhr19@gmail.com . to Everyone 07:45 PM
+yes sir
+From maverickmots@gmail.com . to Everyone 07:45 PM
+yes
+From saeed_raghib@msn.com . to Everyone 07:45 PM
+yes
+From vivekjamshedpur . to Everyone 07:45 PM
+yes
+From Satya to Everyone 07:45 PM
+yes
+From parveen.sahrawat1209@gmail.com . to Everyone 07:45 PM
+yes
+From arjunkumarsc150802@gmail.com . to Everyone 07:45 PM
+yes sir
+From jinsongeo . to Everyone 07:48 PM
+could you please increase the font size?
+From yashdoshi51 . to Everyone 07:50 PM
+sir can you please explain data isolation again?
+From tanwarkaku09@gmail.com . to Everyone 07:51 PM
+yes sir 
+From shreyasbt . to Everyone 07:52 PM
+Where would the snapshot hash be stored.. would it again be on the same blockchain?
+From yashdoshi51 . to Everyone 07:52 PM
+sir what is the use of archiving the data in a hash, because either way they wont be able decrypt it?
+From jinsongeo . to Everyone 07:53 PM
+after data snapshot, what happens to the 1st 100 blocks in our example?
+From yashdoshi51 . to Everyone 07:55 PM
+ok sir
+From girish.khemani76@gmail.com . to Everyone 07:56 PM
+so in a way you are archiving the old blocks in traditional DB and doing a fresh start to the block chain
+From Pranav B to Everyone 07:56 PM
+snapshot will be created in the existing blockchain?
+From zuluoscar65 . to Everyone 07:57 PM
+just like forking sir
+From varmarudraraju3 . to Everyone 07:57 PM
+what happens to the genissi block in this case?
+From jinsongeo . to Everyone 07:57 PM
+will those 100 blocks go to the offchain DB?
+From varmarudraraju3 . to Everyone 07:57 PM
+after archivl of data?
+From ashok.shrinivas@gmail.com . to Everyone 07:59 PM
+can the Genesis block be changed  if no new blocks are created?
+From saeed_raghib@msn.com . to Everyone 07:59 PM
+so are the 1st 100 blocks REMOVED after their hash archived?
+From yashdoshi51 . to Everyone 08:00 PM
+sir can you please  slow down a bit, its getting too technical and difficult to understand.
+From varmarudraraju3 . to Everyone 08:00 PM
+say supppose i have 200 blocks and i want to create a snapshot of 100 blocks. how it is going to effect 101 block
+From dheeraj.kakara@gmail.com . to Everyone 08:00 PM
+yes
+From tanwarkaku09@gmail.com . to Everyone 08:00 PM
+yes sir 
+From ypurohit988@gmail.com . to Everyone 08:00 PM
+Yes
+From yashdoshi51 . to Everyone 08:01 PM
+yes sir. Please give some examples to explain technical things.
+From varmarudraraju3 . to Everyone 08:05 PM
+similar to whatsapp nd to end encryption
+end to end
+From Mainak Mitra to Me (Direct Message) 08:11 PM
+the Developer generating the encryption algorithm can hack into the system and get the information ??
+From 1081btc . to Everyone 08:12 PM
+Wallet ...ledger
+From gayatrisingalwar786@gmail.com . to Everyone 08:13 PM
+can u give the examples?
+like real life example
+From ashok.shrinivas@gmail.com . to Everyone 08:13 PM
+can we say public key is used for encryption & private key used for decrypt
+?
+From saeed_raghib@msn.com . to Everyone 08:14 PM
+slide 9: with quantum processing coming on lne , will sha256 / sha512 be enough or are they moving to sha1024 ?
+From gayatrisingalwar786@gmail.com . to Everyone 08:14 PM
+yeah that happens in assymetric
+From tanwarkaku09@gmail.com . to Everyone 08:15 PM
+ppt is not able to see
+now i can see it 
+From Me to Everyone 08:16 PM
+https://www.kerryveenstra.com/cryptosystem.html
+From yashdoshi51 . to Everyone 08:16 PM
+payge not found
+From vivekjamshedpur . to Everyone 08:16 PM
+i can not copy the link
+From zuluoscar65 . to Everyone 08:16 PM
+done sir
+From arjunkumarsc150802@gmail.com . to Everyone 08:16 PM
+done sir
+From zuluoscar65 . to Everyone 08:17 PM
+open
+From maverickmots@gmail.com . to Everyone 08:17 PM
+I cannot copy the link
+From Aravind Kumar Murugaiyan to Everyone 08:17 PM
+able to open URL
+From yashdoshi51 . to Everyone 08:17 PM
+yes
+From ajaypalam87 . to Everyone 08:19 PM
+pls share link on my email  ;- ajay.palam87@gmail.com
+From saeed_raghib@msn.com . to Everyone 08:19 PM
+the link is also in the ebook ....
+From ajaypalam87 . to Everyone 08:20 PM
+pls share here if possible.
+From jinsongeo . to Everyone 08:20 PM
+you can find the practice labs in the Self Learn section -> Live Classes
+From varmarudraraju3 . to Everyone 08:20 PM
+double click and right click to copy on the message
+From mrneeraj03 . to Everyone 08:22 PM
+i had opened
+From prakashvedv . to Everyone 08:22 PM
+also in Ebooks check L3_Blockchain_Pillars.pdf
+From jinsongeo . to Everyone 08:22 PM
+Section 2 - Live Class -> Lesson 3 Blockchain pillars
+From zuluoscar65 . to Everyone 08:23 PM
+guys select whole message from chat and copy. it will copy it
+From Pragati  to Everyone 08:23 PM
+the link is also available in ppt on page 16 under Lesson 3
+From skmr5613 . to Everyone 08:23 PM
+Done
+From gayatrisingalwar786@gmail.com . to Everyone 08:24 PM
+sir, i tried to change tha data after it was encrypted and decrypted only the cipher text changes , but it can be decrypted with the same key , so how is it immutable the data can be tampered
+From 1081btc . to Everyone 08:24 PM
+Can the same key used for multiple transactions
+From vivekjamshedpur . to Everyone 08:24 PM
+what would be the size of symmetric key.
+From mrneeraj03 . to Everyone 08:24 PM
+sir pls tell once again
+From zuluoscar65 . to Everyone 08:24 PM
+understood sir
+From ypurohit988@gmail.com . to Everyone 08:25 PM
+We can use ascii values to encrypt the data ?
+From saeed_raghib@msn.com . to Everyone 08:25 PM
+with quantum processing coming on line , will sha256 / sha512 be enough or are they moving to sha1024 ?
+From gayatrisingalwar786@gmail.com . to Everyone 08:27 PM
+sir, i tried to change the data after it was encrypted and decrypted only the cipher text changes , but it can be decrypted with the same key , so how is it immutable the data can be tampered
+
+From saeed_raghib@msn.com . to Everyone 08:27 PM
+thanks
+From gayatrisingalwar786@gmail.com . to Everyone 08:29 PM
+okay thank you sir
+From ypurohit988@gmail.com . to Everyone 08:30 PM
+Thanks sir
+From gayatrisingalwar786@gmail.com . to Everyone 08:31 PM
+yes
+From vivekjamshedpur . to Everyone 08:31 PM
+yes
+From ajaypalam87 . to Everyone 08:31 PM
+can you pls tell me how i can find the learning track . not able to open
+From Pragati  to Everyone 08:31 PM
+yes
+From skmr5613 . to Everyone 08:31 PM
+Yes
+From mrneeraj03 . to Everyone 08:32 PM
+sir it changed
+From ajaypalam87 . to Everyone 08:33 PM
+i opened it . reached to live classes but not able to find the practice lab 
+From saeed_raghib@msn.com . to Everyone 08:34 PM
+Ajay: Course 1 --> Self Learning --> Section 2 --> Lesson 3 --> 3.3 (just completed) & 3.4 (currently working on ...)
+From girish.khemani76@gmail.com . to Everyone 08:35 PM
+in some scenarios I see that sender (Joel) could encrypt using his private key instead and receiver (Maria) decrypts using senders public key
+From mohit_pu@yahoo.com . to Everyone 08:36 PM
+not echoingnow
+From ramanbhardwaj364@gmail.com . to Everyone 08:36 PM
+Clear
+From maverickmots@gmail.com . to Everyone 08:36 PM
+no echo anymore
+From PRATIK SHIVAJI KALE . to Everyone 08:36 PM
+all good
+From tanwarkaku09@gmail.com . to Everyone 08:36 PM
+yes 
+From 1081btc . to Everyone 08:42 PM
+What is the logic for using Receipient's public key to encrypt?
+I can use User a's Public key to encrypt and reciepient's pvt key to decrypt
+?
+From ashok.shrinivas@gmail.com . to Everyone 08:43 PM
+when a bank want to receive a file form another company securely ... they will ask the company to encrypt using their pubkey(which is already sent to them in advance)
+From varmarudraraju3 . to Everyone 08:45 PM
+show the example once again browser
+From Pragati  to Everyone 08:46 PM
+what is verify signature here used for?
+ok..
+From girish.khemani76@gmail.com . to Everyone 08:48 PM
+If one sender has to send the message to many receivers. will the sender encrypt using its private key or encrypt many times using the receivers public key (one time each for the each reciever)
+From 1081btc . to Everyone 08:50 PM
+Both ends will recieve same set of pair?
+From Pragati  to Everyone 08:50 PM
+can you explain it again
+like with another example 
+From 1081btc . to Everyone 08:51 PM
+If User a is not using his keys..why does he needs a pair?
+From mrneeraj03 . to Everyone 08:51 PM
+sir not got
+From gayatrisingalwar786@gmail.com . to Everyone 08:55 PM
+yes
+From varmarudraraju3 . to Everyone 08:55 PM
+Yes
+From skmr5613 . to Everyone 08:55 PM
+Yes
+From girish.khemani76@gmail.com . to Everyone 08:55 PM
+If one sender has to send the message to many receivers. will the sender encrypt using its private key or encrypt many times using the receivers public key (one time each for the each reciever)
+
+From 1081btc . to Everyone 08:55 PM
+IN assymentric we dont use senders either keys right?
+From ypurohit988@gmail.com . to Everyone 08:55 PM
+Yes
+From mrneeraj03 . to Everyone 08:56 PM
+done
+From varmarudraraju3 . to Everyone 08:57 PM
+how will recieve know senders public key?
+got it thanks
+From ashok.shrinivas@gmail.com . to Everyone 08:57 PM
+In real world the key is generally emailed.
+From Me to Everyone 08:58 PM
+https://www.tools4noobs.com/online_tools/hash/
+From yashdoshi51 . to Everyone 08:59 PM
+why do need so many different algo?
+From zuluoscar65 . to Everyone 09:00 PM
+screen stuck for me
+From maverickmots@gmail.com . to Everyone 09:01 PM
+can hashes be decrypted?
+From yashdoshi51 . to Everyone 09:01 PM
+screen stuck
+why do we so many different algo for hash?
+From zuluoscar65 . to Everyone 09:02 PM
+can hashes be decrypted? same question
+From ashok.shrinivas@gmail.com . to Everyone 09:03 PM
+No - its oneway
+From saeed_raghib@msn.com . to Everyone 09:03 PM
+is it using a time parameter?
+From zuluoscar65 . to Everyone 09:03 PM
+ok (Y)
+From gayatrisingalwar786@gmail.com . to Everyone 09:04 PM
+yes
+From yashdoshi51 . to Everyone 09:04 PM
+so does hash out changes if we change algo?
+output*
+From gayatrisingalwar786@gmail.com . to Everyone 09:04 PM
+if we are encrypting it with hash then how will we decrypt it?
+From tanwarkaku09@gmail.com . to Everyone 09:05 PM
+ok 
+ook 
+From yashdoshi51 . to Everyone 09:05 PM
+what is the minimum size of a hash of lets say 1gb data?
+From gayatrisingalwar786@gmail.com . to Everyone 09:07 PM
+screen stuck for me
+From ashok.shrinivas@gmail.com . to Everyone 09:07 PM
+depends on the algorithm used. 1gb or 1kb  one algorithm will generate hash of the same size
+From Aravind Kumar M to Everyone 09:08 PM
+do we need to do the hashing for encrypted message or original message
+From PRATIK SHIVAJI KALE . to Everyone 09:08 PM
+what is use of hashing here?
+From Aravind Kumar M to Everyone 09:09 PM
+for data integrity hashing to complement encryption
+From shreyasbt . to Everyone 09:09 PM
+what if the hash is also manipulated to match the hacked encrypted msg?
+From PRATIK SHIVAJI KALE . to Everyone 09:10 PM
+ok 
+From girish.khemani76@gmail.com . to Everyone 09:10 PM
+if hacker is able to change the (encrypted) message .. I believe hacker could even recalculate the new hash for the new message and send to receiver
+From gayatrisingalwar786@gmail.com . to Everyone 09:10 PM
+and how the hash from the sender is sent to recepient, to check if the hash matches with the sender
+From Aravind Kumar M to Everyone 09:11 PM
+do you think the miners are there to find the hashing...to verify the transaction
+From gayatrisingalwar786@gmail.com . to Everyone 09:11 PM
+okay
+From Aravind Kumar M to Everyone 09:11 PM
+that's why miners need high power of computation
+From yashdoshi51 . to Everyone 09:11 PM
+do we need to do the hashing for encrypted message or original message
+
+From saeed_raghib@msn.com . to Everyone 09:14 PM
+slide 25: what if transaction S does not yet exist?
+From gayatrisingalwar786@gmail.com . to Everyone 09:15 PM
+can u explain it again
+From yashdoshi51 . to Everyone 09:15 PM
+can you explain merkle root?
+From Pragati  to Everyone 09:16 PM
+so, basically merkle root is created at last! and how and where it used!?
+From sharma.kajal.19@gmail.com . to Everyone 09:18 PM
+and when the transactions are in odd in number??
+then what happend to the merkel tree?
+From gayatrisingalwar786@gmail.com . to Everyone 09:18 PM
+so if we have more data the hashing is done by dividing data then combined ?
+From 1081btc . to Everyone 09:21 PM
+So header has both Merkel root hash + previous block hash?
+From Pragati  to Everyone 09:22 PM
+how much information/transactions can be stored in a block!?
+From zuluoscar65 . to Everyone 09:22 PM
+ok sir
+From 1081btc . to Everyone 09:23 PM
+& merkel root has becomes hash in next block?
+From gayatrisingalwar786@gmail.com . to Everyone 09:23 PM
+if the genesis block has merkle tree hash so all the following has should have merkle root hash?
+From ashok.shrinivas@gmail.com . to Everyone 09:24 PM
+ each block creates its own merkeltree hash
+From varmarudraraju3 . to Everyone 09:24 PM
+so transactional data is distributed across different blocks?
+From yashdoshi51 . to Everyone 09:25 PM
+so merkle root hash is created after all the data input in a block?
+can we set that only 10 txn are part of every block before hand?
+From Aravind Kumar M to Everyone 09:25 PM
+How we can overcome the storage limit of the node participating in network...because the participating node has to adopt all transactions
+From saeed_raghib@msn.com . to Everyone 09:25 PM
+does the merkle root of block 1 get added to merkle root of 2 also and so on and so forth?
+From jinsongeo . to Everyone 09:26 PM
+What happens in the case of Data Snapshot and the first 100 blocks are archived
+From tanwarkaku09@gmail.com . to Everyone 09:27 PM
+Merkel tree is too hard can't able  understand clearly 
+From mohit_pu@yahoo.com . to Everyone 09:27 PM
+The hash value doesnt help you with the encryption or decrypt the data as in we can't derive the data from hash value. but if we have the original data we can compare the hash value to verify . is it ?
+From Aravind Kumar M to Everyone 09:28 PM
+thanks....so snapshoting strategy varies from node and node depending upon its storage limi
+From varmarudraraju3 . to Everyone 09:28 PM
+snapshot hash will  then be the previous hash?
+From sharma.kajal.19@gmail.com . to Everyone 09:28 PM
+so block size are vary or it will be fixed?for making chain we have to fix the size of block...as every block have to keep the transaction record below the 2kb or 3kb?
+From Aravind Kumar M to Everyone 09:29 PM
+who will take care of snapshoting strategy
+From maverickmots@gmail.com . to Everyone 09:31 PM
+until the block is created, where are the transactions floating around? in databases?
+From jinsongeo . to Everyone 09:32 PM
+so blocks after data snapshot will only have transactions after the snapshot?
+From girish.khemani76@gmail.com . to Everyone 09:32 PM
+you mean outside of the blockchain node
+From maverickmots@gmail.com . to Everyone 09:32 PM
+thank you
+yes
+From ankitdhr19@gmail.com . to Everyone 09:32 PM
+OK
+From tanwarkaku09@gmail.com . to Everyone 09:32 PM
+30 min can we extend 
+From saeed_raghib@msn.com . to Everyone 09:32 PM
+on block size, what decides the completion of the block? (time, size, or number of transactions)?
+From tanwarkaku09@gmail.com . to Everyone 09:33 PM
+plz sir 
+sir 
+hello 
+From girish.khemani76@gmail.com . to Everyone 09:33 PM
+in transit storage of transactions in redis / cassandra , I assume that is outside of blockchain node
+From ashok.shrinivas@gmail.com . to Everyone 09:33 PM
+there is no Auto mute today
+From skyaseenmuskan03370 . to Everyone 09:34 PM
+Hello guys
+From ashok.shrinivas@gmail.com . to Everyone 09:34 PM
+we are able to unmute
+From tanwarkaku09@gmail.com . to Everyone 09:34 PM
+plz can u extend the till 30 min 
+ok 
+From vivekjamshedpur . to Everyone 09:34 PM
+thanks
+From Aravind Kumar M to Everyone 09:35 PM
+It will be great if you share the layered architecture of different participants like the cache to hold transactions not been part of block...there is no solid grip I am getting on that from Arch and tech stack involved
+From maverickmots@gmail.com . to Everyone 09:35 PM
+hi guys, theres an unofficial whatsapp group created by dheeraj if you wanna join.. helpful to share doubts/ links or any info related to the class
+https://chat.whatsapp.com/E3eWCooBrVzBoIkEFM2BHv
+From ankitdhr19@gmail.com . to Everyone 09:38 PM
+SIR,UNTIL THE BLOCKS ARE CREATED U SAY THAT DATA IS STORED IN DISTRIBUTED DATABASES LIKE REDIS/CASSANDRA .DOES NT IT MEAN THAT TILL THE BLOCK IS CREATED WE ARE RELYING ON CENTRALIZED DATABASE.
+From parveen.sahrawat1209@gmail.com . to Everyone 10:00 PM
+yes
+From Kaleemulla Mohammed . to Everyone 10:00 PM
+Yes
+From tanwarkaku09@gmail.com . to Everyone 10:00 PM
+yes
+From ankitdhr19@gmail.com . to Everyone 10:00 PM
+YES
+From r.motwani@tcs.com . to Everyone 10:00 PM
+yes
+From ramanbhardwaj364@gmail.com . to Everyone 10:00 PM
+back!
+From skmr5613 . to Everyone 10:01 PM
+Yes
+From Aravind Kumar M to Everyone 10:06 PM
+preferably NOSQL...why its so? 
+From tanwarkaku09@gmail.com . to Everyone 10:11 PM
+what is this link about 
+sir 
+From Aravind Kumar M to Everyone 10:13 PM
+Got it you prefer NOSQL to achieve distributed Database...its not based upon the growing number of transactions
+From sharma.kajal.19@gmail.com . to Everyone 10:17 PM
+can u plz repeate it??
+From Me to Everyone 10:19 PM
+https://app.diagrams.net/
+From Pranav B to Everyone 10:19 PM
+trnsaction pool also have consensus?
+From Aravind Kumar M to Everyone 10:19 PM
+thanks a lot...it brings some clarity...Do you think consensus major role in snapshoting as well?
+From ankitdhr19@gmail.com . to Everyone 10:19 PM
+NICE EXPLAINATION SIR DOUBT CLEAR 
+From girish.khemani76@gmail.com . to Everyone 10:20 PM
+because there is no central authority ensuring trust
+From prakashvedv . to Everyone 10:20 PM
+All parties should agree to a protocol of honouring the transaction, and it's integrity
+From Aravind Kumar M to Everyone 10:21 PM
+thanks a lot...it brings some clarity...Do you think consensus *Plays major role in snapshoting as well?
+From gayatrisingalwar786@gmail.com . to Everyone 10:21 PM
+we need to maintain integrity and security of the data
+so consensus protocol does thay
+From girish.khemani76@gmail.com . to Everyone 10:24 PM
+where is consensus algo executed 
+From Mohit Verma to Everyone 10:26 PM
+yes
+From ashok.shrinivas@gmail.com . to Everyone 10:26 PM
+yes
+From Satya to Everyone 10:26 PM
+yes
+From girish.khemani76@gmail.com . to Everyone 10:26 PM
+there would be many miners .. so who owns this 
+From vivekjamshedpur . to Everyone 10:27 PM
+voice is breaking
+now it is ok
+From ashok.shrinivas@gmail.com . to Everyone 10:39 PM
+4,0 or 3,0 after gen 3 is booted out?
+From parveen.sahrawat1209@gmail.com . to Everyone 10:41 PM
+Sir what if the removed node wants to come back later?
+Thanks sir.
+From ashok.shrinivas@gmail.com . to Everyone 10:41 PM
+thx
+From yashdoshi51 . to Everyone 10:54 PM
+Do a miners creates the blockchain or some private entity or the organization to whom the data belong?
+sir can you please explain that again?
+yes sir
+pow not understood
+From yashdoshi51 . to Everyone 10:59 PM
+yes
+From girish.khemani76@gmail.com . to Everyone 10:59 PM
+yes
+From Mohit Verma to Everyone 10:59 PM
+\yes
+From prakashvedv . to Everyone 10:59 PM
+yes
+From ankitdhr19@gmail.com . to Everyone 10:59 PM
+YES
+From Mainak Mitra to Everyone 11:02 PM
+then the main requirement of puzzle is to give the miners upper hand of creating block with their preferred transactions and get the mining fee ??
+From prakashvedv . to Everyone 11:02 PM
+can it be any puzzle, or something specific
+From Mohit Verma to Everyone 11:03 PM
+yes
+From yashdoshi51 . to Everyone 11:04 PM
+where do we add them to get those zeros?
+From Mohit Verma to Everyone 11:07 PM
+Bitcoin hashrate has been as high as 179 exahashes per second (1 exahash = 1 quintillion)
+From yashdoshi51 . to Everyone 11:07 PM
+so if the bank has the data, and the miners creates the block from them and they get paid by the bank?
+From ramanbhardwaj364@gmail.com . to Everyone 11:07 PM
+clear now!
+From Aravind Kumar M to Everyone 11:07 PM
+Only in the public blockchain, are the miners involved to validate the transactions right?
+From yashdoshi51 . to Everyone 11:08 PM
+clear about pow
+From prakashvedv . to Everyone 11:08 PM
+won't the zero prefix change the hash value?
+From ankitdhr19@gmail.com . to Everyone 11:09 PM
+CAN THE PUZZLE BE SOLVED EASILY IF QUANTUM COMPUTERS COME I FUTURE
+OK SIR
+From jinsongeo . to Everyone 11:10 PM
+is the puzzle fixed and does only the number of zeros to be appended change?
+From Mohit Verma to Everyone 11:10 PM
+with the quantum computers the competition will take a quantum leap as well in terms of difficulty. 
+From girish.khemani76@gmail.com . to Everyone 11:10 PM
+Given the approach of consensus formulation .. can it happen that some transactions could get disadvantaged and may get committed late or not at all .. How is that avoided
+From Aravind M to Everyone 11:15 PM
+where this difficulty factor will be available for miners
+you mean to say in the header of block
+great
+From yashdoshi51 . to Everyone 11:16 PM
+sir what do you mean by difficulty level?
+and also nonce?
+From Aravind M to Everyone 11:17 PM
+So difficulty level and nonce varies from block to block in the network its been involved
+From girish.khemani76@gmail.com . to Everyone 11:17 PM
+For public blockchain - Who is validating the hash calculated by the miners and who was fastest in calculating?
+From yashdoshi51 . to Everyone 11:19 PM
+sir what do you mean by difficulty level?
+
+From jinsongeo . to Everyone 11:19 PM
+will the other miners stop solving the PoW puzzle when a miner send the value for validation?
+From girish.khemani76@gmail.com . to Everyone 11:19 PM
+ok
+Given the approach of consensus formulation .. can it happen that some transactions could get disadvantaged and may get committed late or not at all .. How is that avoided
+From jinsongeo . to Everyone 11:27 PM
+wont the order of transactions differ if miners go behind transactions of higher value
+From ankitdhr19@gmail.com . to Everyone 11:27 PM
+WHATAPP SAYS THAT THE MESSAGES WE SEND ON WHATSAPP ARE END-TO-END ENCRYPTED NOONE EVEN WHATSAPP CAN TRACE THE MESSAGE B/W TWO PARTIES BUT WHEN WE INSTALL WHATSAPP THEN AT TIME OF INSTALLING IT WILL ASK TO PROVIDE PERMISSIONS TO META TO ACCES DEVICE LOCATION AND MEDIA.SO WHEN WE DO ANY MESSAGE COMMUNICATION IN WHATS APP THEY GET STORED IN OUR DEVICE FROM WHERE META CAN SEE WHAT KINDS OF MEDIA WE ARE SHARING AS WE HAVE GIVEN ACCESS RIGHTS TO OUR DEVICE TO THEM.THOUGH THEY ARE NIOT MAKING FOOL TO PEOPLE IN THE NAME OF END-TO-END ENCRYPTION.
+From Aravind M to Everyone 11:29 PM
+pow is automatic in enterprise blockchains it will be taken care of by consensus??
+
+If that's the case why we cannot achieve the same by consensus?  Is that because the public blockchains don't have option to store floating blocks?
+Ok  got it
+From yashdoshi51 . to Everyone 11:30 PM
+Thank you the lecture sir. 
+From ajaypalam87 . to Everyone 11:30 PM
+hello sir 
+From Pranav B to Everyone 11:31 PM
+Who or what defines difficulty level?
+From girish.khemani76@gmail.com . to Everyone 11:31 PM
+thank you sir, see you next week.
+From yashdoshi51 . to Everyone 11:32 PM
+who decides for bitcoin as it doesnt have any single founder ?
+From ajaypalam87 . to Everyone 11:32 PM
+i was new today ,don't understand much ,so kindly support. even i haven't found  my learning track .
+yes.
+From Pranav B to Everyone 11:32 PM
+but difficulty level varies for every transactions right?
+From ajaypalam87 . to Everyone 11:33 PM
+ not findig the recordings
+but yesterday was also not found
+From saeed_raghib@msn.com . to Everyone 11:33 PM
+hello, I can see the recording for yesterday's class on the portal. I can also play it. But how do I download it to watch it off line?
+From skmr5613 . to Everyone 11:33 PM
+Thank you
+From ashok.shrinivas@gmail.com . to Everyone 11:33 PM
+Thanks Jagadeesh, Goodnight Everyone
+From ajaypalam87 . to Everyone 11:33 PM
+ok 
+From r.motwani@tcs.com . to Everyone 11:33 PM
+thank you
+From mrneeraj03 . to Everyone 11:33 PM
+thankyou sir
+From zuluoscar65 . to Everyone 11:33 PM
+thanks sir
+From Pranav B to Everyone 11:33 PM
+Thank you sir
+From sharma.kajal.19@gmail.com . to Everyone 11:33 PM
+thanx alot sir...
+From ankitdhr19@gmail.com . to Everyone 11:33 PM
+THAKS FOR SHARING VALUABLE INFORMATION GD NIGHT FRIENDS
+From yashdoshi51 . to Everyone 11:34 PM
+who decides difficulty level for bitcoin as it doesn't have any single company or organisation?
