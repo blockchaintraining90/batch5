@@ -1,0 +1,142 @@
+1. License --- optional 
+2. writing statements understable by compilers
+3. actual code/schema definitions
+4. class/function specifications
+5. business logics
+
+greater than 0.8 ---> pragma solidity ^0.8.0
+b/w 0. and 0.8   ---> pragma solidity > 0.7.0 < 0.8.0
+
+contract Helloworld
+C\contract DEX
+
+function functionName (input parameters) accesstype operationtype returntype
+
+pure means the function is not reading any data from blockchain
+
+gas will be incured only for function operations that write data on the ledger
+
+deploying a contract ---- gas fee
+
+
+2017:
+-----
+
+contract A ---> 8098098888
+
+contract A ---> 90009898098 ----> issue consiering all the old data was refered from previous address
+
+
+2019 ---open zepline 
+
+contract A ---> 8098098888
+
+update contract A ---> 8098098888
+
+
+
+
+Remix   --- online IDE
+Ganche  --- Local deployments
+Truffle --- command line (preferred) ---> prod depl
+Hardhat --- command line (preferred) ---> prod depl
+
+
+contratc deployment ---> we speicfy owner function
+
+contract Simpletransfer {
+
+ onlyOwner = (ioihoi098-08-09)
+
+}
+
+
+
+
+create a new crypto curreny token ---> simplilernToken ---> 1M ----> ERC20 
+
+
+ERC721 ---> 
+
+ land registry ---> erc721
+
+Asset
+
+ { 
+
+ asset name -
+
+ asset prop -
+
+}
+
+  land a ---> long 127 lat 128 ---> land001
+
+  land b ---> long 190 lat 120---> land002
+
+
+ERC 20 
+
+ERC 721
+
+ERC 1155
+
+
+
+poverty kiwi glare they boost suit strong custom hole swim monster trial
+
+
+1 Ether = 1000000000000000000 Wei.
+1 Ether = 1000000000000000 Kwei.
+1 Ether = 1000000000000 Mwei.
+1 Ether = 1000000000 Gwei.
+1 Ether = 1000000 Szabo.
+1 Ether = 1000 Finney.
+1 Ether = 0.001 Kether.
+1 Ether = 0.000001 Mether.
+
+
+
+
+
+
+ERC20:
+--------
+
+1. create token with supply - 21M
+2. transfer/issue token to other (sender address, recepient address, token value)
+3. ownership (token id, owner)
+4. balance   (token id)
+
+
+ERC721:
+--------
+
+1. create
+2. transfer
+3. ownership
+
+ 1. create ----> nft id 12345 ---> owner - 9086
+ 2. transfer ----> (9086, 678, 12345) ----> done ---> 678
+ 3. ownership ----> 678
+
+
+Roles:
+-------
+
+1. Developer
+2. Architect
+3. Business Analyst
+4. Devops
+5. QA
+6. Community Manager
+7. Technical writer --- new protocol, 
+8. DEsigner --- design new UI/UX
+9. Program Manager/Product Manager ---> non tech ---> experinced roles
+
+
+ 7 yrs ----> 5 yrs ---> associate architect
+20 yrs ----> 2 yrs ---> 
+
+
+
