@@ -1,0 +1,1224 @@
+Step 1 --> Download the app image from URL https://download.electrum.org/4.1.2/    (electrum-4.1.2-x86_64.AppImage)
+
+Step 2 --> Goto download folder and then right click and choose "open terminal"
+
+Step 3 --> sudo chmod +x electrum-4.1.2-x86_64.AppImage and enter
+
+Step 4 --> run the script sudo ./electrum-4.1.2-x86_64.AppImage --testnet
+
+5. It will open the instalation wizard
+
+6. Follow steps as per DOC
+
+7. goto url https://coinfaucet.eu/en/btc-testnet/ for test BTC
+
+
+
+
+smart contract logic:
+-----------------------
+
+
+ a = a + b --->
+
+ a+= b    --->
+
+
+ a = a + b  ----> 3 bytes ---> 1 byte ---> 7000 gas ----> 21000 gas ---> 100 eth
+ 
+ a+= b ----> 2 bytes --------> 1 byte ---> 7000 gas ----> 14000 gas  ---> 75 eth
+
+
+wait basket walnut promote cradle once consider gorilla matrix shoot notable web
+
+
+Bitcoin vs Ethereum:
+---------------------
+
+Mining ---> POW (hash puzzle/nonce value/txn validation)
+       ---> POS (txn validatins)
+
+
+Use commands to grant privlges to the app image file
+
+3. use command to lauch the wallet
+4. create seed phrase
+5. copy the seed pharse
+5. reenter the seed phrase
+6. RECEIVE tab
+7. click on new address tab
+8. goto test faucet url https://coinfaucet.eu/en/btc-testnet/
+9. paste ur adress and enter
+
+
+Enhanced security:
+-------------------
+
+1. opt for bulk wallet (which generates multiple public/private keys). So that every transaction can be encrypted using different keys everytime.
+
+
+we have concept of network id/chain id parameters
+
+1. '1' --- eth mainnet
+2. '5777' -- eth testnet
+
+
+
+images ----> Metadata ---> offchain (IPFS --- ETH) ---> unique
+
+{
+   pixel details --->
+ heght 100 px
+ breadth
+
+}
+
+image (underlying metadata) ----> hash (image) ---> unique id for every image ---> as input to the block
+
+NFT - Non Fungible tokens
+
+chareteristics:
+---------------
+
+1. each and every token is unique
+2. can track the ownership details by querying the current ownership
+3. maintains history of the NFT over a period
+
+we can create an NFT for lets say a Banking BOND 
+
+NFT ---> 12345 (ERC721) -- these standards help in maintaing aset life cycle with prebuilt functions
+
+func currentOwner (nft id) ownerAddress()
+func previousHist (nft id) [] ownerAddress()
+ 
+bank A ---> bank B
+
+bank B ---> bank C
+
+
+{
+ name : Bank bond
+ issuer: bank A
+ debter: ban B
+ issuance : jan 15th 2023
+ expire date : feb 15th 2023
+ amout value : 50 CR INR/USD
+}
+
+have smart contract features that automatically initiate a transfer transaction from bank B to bank A
+
+
+type block 
+
+{
+  block id
+  txn  datatype
+  data  dattype
+}
+
+
+creation of blocks:
+----------------------
+
+1. no of txn OR  ---> 125 txn
+2. size of block OR ---> 1MB
+3. block cutting timer ---> 30 sec
+
+
+100 txn ---> 900kb ----(last 15 mins) --- we were not bale to create block for 15mins --> not efficient
+
+30 sec: more efficient
+
+
+
+Bitcoin follows UTXO data validation model
+
+UTXO --- unspent transaction output --> helps in preventing double spending problem
+
+we have to avoid double spending is we are grouping multiple txn in a block for a finite period
+
+this can result in same txn proposed more than once in the network
+
+same 5 BTC transfer from user a to user b ----> 1 txn more than once
+
+User A: 
+-------
+
+network visibility:
+--------------------
+
+1. purchases 10 BTC from exchange ----> txn1 ---> (10 BTC as input, 0 BTC as output) -- Unspent 1
+
+2. user A has received 3 BTC from user B ---> 
+
+
+
+end user visibility:
+--------------------
+3. user queries the balance ---> it identifies how many unspent txn are in the wallet and aggregates
+                            ---> txn1 , txn2 ---> 10,3 --> 13 BTC
+
+4. user A wishes to transfer 2 BTC to user C
+    txn3 ---> it spends the UTXO txn2 and creates new entry ---> 
+              txn2 ---> (3 BTC) -- this is consumed/utilized --- spent 2
+              txn3 ---> (2 BTC, 1 BTC) --- Unspent 3
+
+
+5. user queries the balance
+    txn1 -- unspent --- 10 btc
+    txn2 -- spent   
+    txn3 -- unspent --   1 btc
+   10+1 == 11 btc
+
+how does UTXO helps in mitigating double spending
+
+it's done with 5-10 sec
+
+block 1 [ {txn1 --- user A} {txn2 --- user B} { txn3 --- user C} {txn1 --- user A} ]
+
+ with this UTXO ---> 1 txn is valid, reject the 2nd txn
+
+
+txn1 ---> 2 btc -- spent
+
+txn2 ---> 1 btc -- spent
+          
+          (input, output)
+txn3 ---> (3 BTC, 3 BTC) ---> spent 
+ txn4(2) --> 0 BTC
+
+after block created.... eventually miners will check the balance of the sender account
+
+creates a new state out of it 3 btc ---> user b
+
+as long as these unspent txn are spent entirely resulting in the same input
+
+user transfers 3 btc to user X --->
+
+
+
+0.5 btc ---> 0.000015 txn
+0.1 btc ---> 0.0000001 txn
+
+
+
+Transaction input:
+------------------
+
+1. Transfer of 5 BTC from user a to user b
+2. user a pub key ---> 12345 , priv key ---> 678912345
+2. digitally sign the transaction with user a private key (user a, 5 btc, user b) + encyypted with privkey
+   ====> ihuil87608790jkj98098[098[909890lkjlkj
+
+3. this is captured as scriptsig in the BTC ---> hash (digital signtaure) and public key
+
+
+Transaction output:
+-------------------
+
+1. DUP
+2. HASH160
+3. original pub Key hash
+4. equal verify
+5. check signature
+
+
+step1 ---> push digitl sign into the stack --->   ihuil87608790jkj98098[098[909890lkjlkj
+(transaction input) step2 ---> pub key 12345 
+step3 ---> copy the public key into the stack and compute hash of it ---> ghtdhyuoo
+(txn output)step4 ---> it has public key hash captured ---> hash(12345) ---> ghtdhyuoo
+step5 ---> compare f public key is same as public key fro input (step 2 and step4)
+
+
+1. we can derive public key from private key and digital signature (cryptograhy)
+
+assume that bitcoin is runnig across 2000 nodes globally
+
+2000 ----> 600 miner nodes ----> [ country 1 (100) , country 2 (50) , country3 (150) ] ===> ~ 50% ---> 300 miners
+ 50% ---> miners are coordinting amongh themselves
+
+
+
+
+
+
+
+parveen.sahrawat1209@gmail.com .  to  Everyone 8:08 PM
+No protocol specified
+qt.qpa.xcb: could not connect to display :10.0
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, vnc, wayland-egl, wayland, wayland-xcomposite-egl, wayland-xcomposite-glx, webgl, xcb.
+
+Aborted
+mrneeraj03 .  to  Everyone 8:08 PM
+till now not opened
+You  to  Everyone 8:08 PM
+./electrum-4.1.2-x86_64.AppImage --testnet
+yashdoshi51 .  to  Everyone 8:08 PM
+how to connect to server?
+parveen.sahrawat1209@gmail.com .  to  Everyone 8:08 PM
+Without sudo it worked
+yashdoshi51 .  to  Everyone 8:08 PM
+auto connect ?
+skyaseenmuskan03370 .  to  Everyone 8:09 PM
+Permission denied
+
+Mohit Verma  to  Everyone 8:09 PM
+without sudo it worked
+Yash Purohit  to  Everyone 8:09 PM
+auto connect or manual ?
+parveen.sahrawat1209@gmail.com .  to  Everyone 8:09 PM
+If permission denied then use sudo
+You  to  Everyone 8:09 PM
+Step 1 --> Download the app image from URL https://download.electrum.org/4.1.2/    (electrum-4.1.2-x86_64.AppImage)
+
+Step 2 --> Goto download folder and then right click and choose "open terminal"
+
+Step 3 --> sudo chmod +x electrum-4.1.2-x86_64.AppImage and enter
+
+Step 4 --> run the script ./electrum-4.1.2-x86_64.AppImage --testnet
+varmarudraraju3 .  to  Everyone 8:09 PM
+great it worked with out sudo
+jinsongeo .  to  Everyone 8:10 PM
+what is this seed? 
+zuluoscar65 .  to  Everyone 8:11 PM
+is bitcoin save in seed or wallet? sir
+yashdoshi51 .  to  Everyone 8:12 PM
+show we write the words?
+zuluoscar65 .  to  Everyone 8:12 PM
+but we can install same wallet and use our seed to use funds?
+mrneeraj03 .  to  Everyone 8:12 PM
+how to start
+today not anything
+mrneeraj03 .  to  Everyone 8:14 PM
+sir app image as showing in your pc not showing in mine
+Mohit Verma  to  Everyone 8:14 PM
+auto connect or manual 
+?
+ramanbhardwaj364@gmail.com .  to  Everyone 8:14 PM
+Auto connect 
+Yash Purohit  to  Everyone 8:14 PM
+qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 1572, resource id: 8431412, major code: 40 (TranslateCoords), minor code: 0
+qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 4226, resource id: 8436556, major code: 40 (TranslateCoords), minor code: 0
+qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 4363, resource id: 8437359, major code: 40 (TranslateCoords), minor code: 0
+qt.qpa.xcb: QXcbConnection: XCB error: 3 (BadWindow), sequence: 4786, resource id: 8440593, major code: 40 (TranslateCoords), minor code: 0
+
+Yash Purohit  to  Everyone 8:15 PM
+got this error after opening wallet
+Mohit Verma  to  Everyone 8:15 PM
+default wallet?
+You  to  Everyone 8:16 PM
+https://download.electrum.org/4.1.2/
+Mohit Verma  to  Everyone 8:16 PM
+kind of wallet?
+saeed_raghib@msn.com .  to  Everyone 8:17 PM
+did you select the checkbox for "encrypt wallet file"?
+Mohit Verma  to  Everyone 8:17 PM
+kind of wallet style ?
+saeed_raghib@msn.com .  to  Everyone 8:17 PM
+it by default checked
+PRATIK SHIVAJI KALE .  to  Everyone 8:21 PM
+yes
+Aravind M  to  Everyone 8:21 PM
+S
+zuluoscar65 .  to  Everyone 8:21 PM
+yes
+ramanbhardwaj364@gmail.com .  to  Everyone 8:21 PM
+Yes
+parveen.sahrawat1209@gmail.com .  to  Everyone 8:21 PM
+yes
+maananparmar@gmail.com .  to  Everyone 8:21 PM
+yes
+girish.khemani76@gmail.com .  to  Everyone 8:21 PM
+yes
+Yash Purohit  to  Everyone 8:21 PM
+yes
+Kaleemulla Mohammed .  to  Everyone 8:21 PM
+bc1q49xvjc4xuch3t3npq5e5n0nvv86yctz7sx7yzj
+vivekjamshedpur .  to  Everyone 8:21 PM
+yes
+sharma.kajal.19@gmail.com .  to  Everyone 8:21 PM
+yes
+done
+skyaseenmuskan03370 .  to  Everyone 8:21 PM
+yes
+Mohit Verma  to  Everyone 8:21 PM
+done
+yashdoshi51 .  to  Everyone 8:23 PM
+why do we need so many address?
+ramanbhardwaj364@gmail.com .  to  Everyone 8:24 PM
+How to create second address could you please repeat.
+Ok...got it
+parveen.sahrawat1209@gmail.com .  to  Everyone 8:24 PM
+Click on New Address to create second address
+You  to  Everyone 8:25 PM
+https://coinfaucet.eu/en/btc-testnet/
+Pranav B  to  Everyone 8:25 PM
+public key and private key are derived from address?
+saeed_raghib@msn.com .  to  Everyone 8:25 PM
+but, if you change the address, how do I Xfer btc from on to the other address as a safety precaution?
+Kaleemulla Mohammed .  to  Everyone 8:26 PM
+tb1qmkrl29ufnncj8jlma05cav2gn2phv3sqj79j22
+yashdoshi51 .  to  Everyone 8:27 PM
+nothing shown in history
+1081btc .  to  Everyone 8:27 PM
+Wonderful Jagadish 
+vivekjamshedpur .  to  Everyone 8:28 PM
+I rerun to get testnet.. can you repeat from there
+zuluoscar65 .  to  Everyone 8:28 PM
+sir
+girish.khemani76@gmail.com .  to  Everyone 8:28 PM
+So till it is confirmed, these bitcoins can not be used?
+1081btc .  to  Everyone 8:28 PM
+Usually it takes 30 mins? in BTC?
+parveen.sahrawat1209@gmail.com .  to  Everyone 8:28 PM
+Type enter and then steps will be there in a popup. Follow the steps
+Kaleemulla Mohammed .  to  Everyone 8:29 PM
+does it remain unconfirmed
+saeed_raghib@msn.com .  to  Everyone 8:29 PM
+how many btc did we get?
+Kaleemulla Mohammed .  to  Everyone 8:30 PM
+how many times can we keep requesting from faucet?
+Kaleemulla Mohammed .  to  Everyone 8:30 PM
+can we go through another faucet website
+get2prags@gmail.com .  to  Everyone 8:30 PM
+could you please repeat from the step  -"  how to request test bitcoins'
+Kaleemulla Mohammed .  to  Everyone 8:31 PM
+Got it, thank you
+You  to  Everyone 8:31 PM
+https://bitcoinfaucet.uo1.net/send.php
+2021-04-08 15:49	53M
+parveen.sahrawat1209@gmail.com .  to  Everyone 8:35 PM
+Sir one address is getting disappear in wallet.
+Kaleemulla Mohammed .  to  Everyone 8:36 PM
+Can someone share a drive link of all our class notes?
+Mohit Verma  to  Everyone 8:37 PM
+BTC received
+girish.khemani76@gmail.com .  to  Everyone 8:38 PM
+are addresses only for one time use... after the transaction got confirmed. I can no longer see the addresses
+You  to  Everyone 8:38 PM
+https://bitcoinfaucet.uo1.net/send.php
+Mohit Verma  to  Everyone 8:39 PM
+i have gone through the view section and tehn coins 
+it is showing coins too
+saeed_raghib@msn.com .  to  Everyone 8:40 PM
+how do u know when u have the btc?
+PRATIK SHIVAJI KALE .  to  Everyone 8:43 PM
+Are mining feeds different on basis of address ?
+As I'm also sending 1.8 BTC but fees is different for me 
+fees*
+yashdoshi51 .  to  Everyone 8:44 PM
+close lab?
+jinsongeo .  to  Everyone 8:44 PM
+Clicking on the transaction gives more details
+Aravind M  to  Everyone 8:45 PM
+If there is a unconfirmed transaction  do we allowed to start another transaction 
+
+Aravind M  to  Everyone 8:45 PM
+on same address
+can you please go to receive
+Aravind M  to  Everyone 8:46 PM
+and there I can red
+Aravind M  to  Everyone 8:46 PM
+ok...got it
+girish.khemani76@gmail.com .  to  Everyone 8:47 PM
+But the wallet will not allow you to send more than the confirmed BTC balance?
+mrneeraj03 .  to  Everyone 8:47 PM
+sir how will i do ?
+Ishant Wadhwa .  to  Everyone 8:47 PM
+do we have any crypto phone wallets or APIs which we can use in our app(mobile) like other apps use Paytm for transactions? 
+mrneeraj03 .  to  Everyone 8:47 PM
+i had not got any thing
+jinsongeo .  to  Everyone 8:48 PM
+Do we need to submit the lab?
+You  to  Everyone 8:48 PM
+Step 1 --> Download the app image from URL https://download.electrum.org/4.1.2/    (electrum-4.1.2-x86_64.AppImage)
+
+Step 2 --> Goto download folder and then right click and choose "open terminal"
+
+Step 3 --> sudo chmod +x electrum-4.1.2-x86_64.AppImage and enter
+
+Step 4 --> run the script sudo ./electrum-4.1.2-x86_64.AppImage --testnet
+Ishant Wadhwa .  to  Everyone 8:49 PM
+do we have any crypto phone wallets or APIs which we can use in our app(mobile) like other apps use Paytm for transactions? 
+You  to  Everyone 8:49 PM
+CoinSwitch, CoinDcx, Binance
+girish.khemani76@gmail.com .  to  Everyone 8:49 PM
+if there are no incentive , why would any one manage/maintain the seed nodes
+Ishant Wadhwa .  to  Everyone 8:49 PM
+coin dcx has aps?
+apis?
+girish.khemani76@gmail.com .  to  Everyone 8:50 PM
+when miners pick the transactions for mining the block they may or may not pick them in order, based on the transaction fees.
+zuluoscar65 .  to  Everyone 8:50 PM
+many exchanges uses multiwallet? sir?
+Aravind M  to  Everyone 8:52 PM
+Do you have the set of scenarios to playaround, to understand our learnings till now say for example UTXO
+Aravind M  to  Everyone 8:53 PM
+Ok...but it will be great if your lab guide covers that as well
+Expecting more scenarios to get transparency about the happenings behind the screen 
+You  to  Everyone 8:57 PM
+https://entethalliance.org/
+saeed_raghib@msn.com .  to  Everyone 9:01 PM
+how they achieve the fast speed??
+1081btc .  to  Everyone 9:02 PM
+No POW
+Yash Purohit  to  Everyone 9:02 PM
+through difficulty level.
+1081btc .  to  Everyone 9:03 PM
+Are seeds present ? & mining ?
+Yash Purohit  to  Everyone 9:03 PM
+yes ethereum wallets also have seeds
+Pranav B  to  Everyone 9:06 PM
+ethereum coins and ethereum smart contracts have different blockchains?
+yashdoshi51 .  to  Everyone 9:09 PM
+can you please explain again?
+please explain evm agaun
+1081btc .  to  Everyone 9:12 PM
+hoe ethers are generated?
+Kaleemulla Mohammed .  to  Everyone 9:13 PM
+Bitcoin now has ZERO fee on Binance right
+Pranav B  to  Everyone 9:17 PM
+EVM is mandatory for Ethereum node?
+saeed_raghib@msn.com .  to  Everyone 9:17 PM
+JVM provides protection. What protection does EVM provide?
+mrneeraj03 .  to  You (Direct Message) 9:19 PM
+after downloading it is always asking how to open it
+dheerajmaske .  to  Everyone 9:19 PM
+Can you explain the "Isolated Environment(Sand box)"?
+saeed_raghib@msn.com .  to  Everyone 9:22 PM
+so the companies that are hiring based on precisness of contracts so it costs less?
+yashdoshi51 .  to  Everyone 9:22 PM
+sir can you please explain again. Did not understand gas concept. 
+sharma.kajal.19@gmail.com .  to  Everyone 9:22 PM
+same here sir...
+plz explain once
+saeed_raghib@msn.com .  to  Everyone 9:23 PM
+what is a typical cost of gas limit in enterprise contracts? Is it in 1000s or more?
+vivekjamshedpur .  to  Everyone 9:24 PM
+jagadeesh, some times your voice go very low. am I only experiencing this or all other participant.
+PRATIK SHIVAJI KALE .  to  Everyone 9:24 PM
+what is network usage here?
+yashdoshi51 .  to  Everyone 9:25 PM
+sir can you please explain again. Did not understand gas concept.
+tanwarkaku09@gmail.com .  to  Everyone 9:25 PM
+ur voice not audible sir  
+yashdoshi51 .  to  Everyone 9:28 PM
+Did not understand gas concept.
+
+Pranav B  to  Everyone 9:28 PM
+So smart contracts are expensive for enterprise??
+1081btc .  to  Everyone 9:28 PM
+Is there a cap on ethereum ? lIke BTC
+PRATIK SHIVAJI KALE .  to  Everyone 9:29 PM
+yes
+mrneeraj03 .  to  You (Direct Message) 9:29 PM
+yes
+yashdoshi51 .  to  Everyone 9:29 PM
+yes
+ramanbhardwaj364@gmail.com .  to  Everyone 9:29 PM
+Loud and clear 
+saeed_raghib@msn.com .  to  Everyone 9:29 PM
+yes
+ashok.shrinivas@gmail.com .  to  Everyone 9:29 PM
+yes
+get2prags@gmail.com .  to  Everyone 9:29 PM
+yes
+gayatrisingalwar786@gmail.com .  to  Everyone 9:29 PM
+yes
+sharma.kajal.19@gmail.com .  to  Everyone 9:29 PM
+yes
+saeed_raghib@msn.com .  to  Everyone 9:29 PM
+yes
+rahulrathorerr001@gmail.com .  to  Everyone 9:29 PM
+audible
+yes
+yashdoshi51 .  to  Everyone 9:29 PM
+no sir. 
+not really
+dheerajmaske .  to  Everyone 9:29 PM
+Protocol decides the gas?
+sharma.kajal.19@gmail.com .  to  Everyone 9:29 PM
+not exactly
+ankitdhr19@gmail.com .  to  Everyone 9:29 PM
+yes sir
+saeed_raghib@msn.com .  to  Everyone 9:29 PM
+can contracts be deleted?
+sharma.kajal.19@gmail.com .  to  Everyone 9:29 PM
+gas limit and gas point not exactly clr
+girish.khemani76@gmail.com .  to  Everyone 9:30 PM
+sir you did not answer BTC smart contract question. what are we really achieving with BTC scripting ... If you hash the pub key and compare the hash that was provided .. They will always match. so what are we achieving
+
+
+
+Mohit Verma  to  Everyone 9:30 PM
+i think sometime you go a bit far from mike.. tht might creates a fluctuation
+vivekjamshedpur .  to  Everyone 9:30 PM
+ok
+yashdoshi51 .  to  Everyone 9:30 PM
+yes
+girish.khemani76@gmail.com .  to  Everyone 9:30 PM
+25
+rahulrathorerr001@gmail.com .  to  Everyone 9:30 PM
+25
+yashdoshi51 .  to  Everyone 9:30 PM
+25?
+Mohit Verma  to  Everyone 9:30 PM
+25
+vivekjamshedpur .  to  Everyone 9:30 PM
+25
+parveen.sahrawat1209@gmail.com .  to  Everyone 9:30 PM
+25
+alkamandal1433@gmail.com .  to  Everyone 9:30 PM
+25
+Aravind M  to  Everyone 9:31 PM
+you flashed Julia as another option of language to write a smart contract 
+what value it brings??
+
+
+mrneeraj03 .  to  You (Direct Message) 9:31 PM
+sir
+
+
+
+Gas Limit 
+
+Gas Price
+
+ 100 eth from usera to userb
+
+jan 21st:
+----------
+ actual == 100 eth
+ txn    == 0.1 eth (fluctuating)
+
+
+jan 23rd :
+----------
+ actual == 100 eth
+ txn    == 0.3 eth (fluctuating)
+
+
+types of accounts in ethrem:
+-----------------------------
+
+1. external owned accounts ---- > end user wallet accounts
+
+2. contract accounts       ---- > accounts specific to smart contracts
+
+
+
+ a. hello world smart contract  ----> deploy ---> account ('98789kjbkjgukugtydrfgjhy')
+ 
+ b. digital currency token      ----> deploy ---> acoount (jggliuhguh87087097-098-7908)
+
+
+utxo:
+--------
+
+usrer a:
+--------
+1. utxo ---- 5 btc
+2. utxo ---- 3 btc
+3. used ---- 2 btc
+
+
+
+ ===> 8 btc
+
+account:
+------------
+
+ eoa:
+------
+
+1. 10 eth ----> delta ----> 12 eth (new state)
+
+
+POS:
+----
+
+
+block1 ---> 100 txn ---> 1200 eth ---> 0.1 ---> 120 eth
+
+block2 ---> 60 -----> 1000 eth ---> 0.2 ----> 50 eth
+
+
+Create code in workspace ---> compile the code ----> Deploy the code (we need test ethers and account)
+
+
+
+usera --- 100 eth userb ---> 901
+
+txn ---> {901, usera --- 100 eth userb, 100, usera, userb, privkey(data), gas price, gas limit)
+
+
+
+
+import 'hello world' (helloworld.sol)
+import contract address ('98789kjbkjgukugtydrfgjhy')
+
+ print (hello world)
+ 
+1000 USD
+ 800 USD
+
+1 gas unit ---> 10 eth
+1 gas unit ---> 12 eth , 8 eth
+
+
+Transaction fee = (Gas limit ---> CONSTANT) * (Gas Price---> VARIED QUANTITY)
+
+
+
+
+
+
+
+
+
+
+
+From Faculty 101 to Me (Direct Message) 07:27 PM
+Can we start?
+Me to Faculty 101 (Direct Message) 07:27 PM
+Yes sure
+From saeed_raghib@msn.com . to Everyone 07:29 PM
+hello 
+has the class started?
+Me to Faculty 101 (Direct Message) 07:29 PM
+also, few learners are facing copy/paste issue from chat to lab
+From Ajith to Everyone 07:29 PM
+Not yet Saeed
+From ankitdhr19@gmail.com . to Everyone 07:29 PM
+hello everyone.
+From maverickmots@gmail.com . to Everyone 07:30 PM
+audible
+From prakashvedv . to Everyone 07:30 PM
+yes
+From Ajith to Everyone 07:31 PM
+Tes
+Yes
+Yes
+From girish.khemani76@gmail.com . to Everyone 07:31 PM
+yes
+From Satya to Everyone 07:31 PM
+yes
+From ramanbhardwaj364@gmail.com . to Everyone 07:31 PM
+loud and clear!
+From girish.khemani76@gmail.com . to Everyone 07:33 PM
+why the term "Elapsed Time" in POET .. is it because after a certain proportionate time every participant gets opportunity to mine.
+From maverickmots@gmail.com . to Everyone 07:43 PM
+4.11 I have Bitcoin Attacks
+4.12 I have Bitcoin Network
+From tanwarkaku09@gmail.com . to Everyone 07:43 PM
+yes sir
+From vivekjamshedpur . to Everyone 07:44 PM
+yes
+From Ajith to Everyone 07:44 PM
+Yes
+From prakashvedv . to Everyone 07:44 PM
+y
+From skyaseenmuskan03370 . to Everyone 07:44 PM
+Yes
+From girish.khemani76@gmail.com . to Everyone 07:44 PM
+yes
+From maverickmots@gmail.com . to Everyone 07:44 PM
+sorry I cant find the practice project
+From shreyasbt . to Everyone 07:44 PM
+paper wallet assisted practice is 4.4
+From Me to Everyone 07:44 PM
+https://www.bitaddress.org/
+From maverickmots@gmail.com . to Everyone 07:44 PM
+I just see a different topic
+and
+This topic is covered in our Live Virtual Class.
+Click on the Live Class Tab on the left panel to check the live class schedule, and register at your convenience.
+From saeed_raghib@msn.com . to Everyone 07:47 PM
+yes
+From mohit_pu@yahoo.com . to Everyone 07:47 PM
+yes
+From ashok.shrinivas@gmail.com . to Everyone 07:47 PM
+yes
+From maverickmots@gmail.com . to Everyone 07:47 PM
+sorry I still cant see the content
+From bittansari . to Everyone 07:48 PM
+yes
+From maverickmots@gmail.com . to Everyone 07:48 PM
+4.6 Bitcoin Block
+4.7 Practice Project: Assisted Practice: Review and Analyze a Bitcoin Block on Explorer
+4.8 Bitcoin Transaction
+4.9 Practice Project: Assisted Practice: Analyze a Bitcoin Transaction
+4.10 Bitcoin Scripts
+4.11 Bitcoin Attacks
+4.12 Bitcoin Network
+4.13 Bitcoin Mining
+4.14 Knowledge Check
+4.15 Practice Project: LEP 2: Conduct a Transaction Using Electrum Wallet
+Lesson 5
+I cant download the practice project
+From shreyasbt . to Everyone 07:49 PM
+Maverick, please go to 4.4
+From ramanbhardwaj364@gmail.com . to Everyone 07:49 PM
+4.4 is the correct one.
+From maverickmots@gmail.com . to Everyone 07:50 PM
+thanks guys, finally on the same page!
+From jinsongeo . to Everyone 07:52 PM
+what can we do with the bitcoin address?
+From ankitdhr19@gmail.com . to Everyone 07:54 PM
+which is the most advanced hashing algorithm?
+From Me to Everyone 07:54 PM
+SHA512
+From Pranav B to Everyone 07:55 PM
+public key and private key must be stored at our end to again have access to bitcoins?
+From Me to Everyone 07:56 PM
+https://jaxx.io/
+From saeed_raghib@msn.com . to Everyone 07:57 PM
+are we doing this in a lab?
+From yashdoshi51 . to Everyone 08:02 PM
+sir not able to do
+sir do we need to download it?
+sir please help what do after adding to chrome extension?
+From sharma.kajal.19@gmail.com . to Everyone 08:02 PM
+same que from my side too
+From Ajith to Everyone 08:03 PM
+done
+Yes
+From yashdoshi51 . to Everyone 08:03 PM
+added to chrome
+From sharma.kajal.19@gmail.com . to Everyone 08:03 PM
+not open and register sir
+From vivekjamshedpur . to Everyone 08:03 PM
+yes done
+From yashdoshi51 . to Everyone 08:03 PM
+cant go furtehr
+From sharma.kajal.19@gmail.com . to Everyone 08:03 PM
+plz help
+From yashdoshi51 . to Everyone 08:04 PM
+do we need to download it from websit?
+From mrneeraj03 . to Everyone 08:04 PM
+sorry sir for late join
+From zuluoscar65 . to Everyone 08:04 PM
+ok
+From sharma.kajal.19@gmail.com . to Everyone 08:04 PM
+it added bt cnt able to open
+From Me to Everyone 08:05 PM
+https://jaxx.io/
+From tanwarkaku09@gmail.com . to Everyone 08:06 PM
+we have for windows 
+From yashdoshi51 . to Everyone 08:07 PM
+done sir
+its opening
+From tanwarkaku09@gmail.com . to Everyone 08:07 PM
+we have to download in windows 
+From bittansari . to Everyone 08:09 PM
+yes
+From girish.khemani76@gmail.com . to Everyone 08:09 PM
+yes
+From zuluoscar65 . to Everyone 08:09 PM
+yes sir
+From girish.khemani76@gmail.com . to Everyone 08:10 PM
+why the term "Elapsed Time" in POET .. is it because after a certain proportionate time every participant gets opportunity to mine.
+
+From sharma.kajal.19@gmail.com . to Everyone 08:10 PM
+yes....
+From girish.khemani76@gmail.com . to Everyone 08:11 PM
+ok thanks
+From prakashvedv . to Everyone 08:11 PM
+can the bitcoins be available on all the wallets like SW/Desktop/Web
+or they remain on the wallet
+From zuluoscar65 . to Everyone 08:12 PM
+no i guess
+they dont sync
+From Ishant Wadhwa . to Everyone 08:12 PM
+which decentralized crypto wallet can be used in a mobile app for transactions like mmt use paytm etc?
+From prakashvedv . to Everyone 08:12 PM
+ok got it
+From zuluoscar65 . to Everyone 08:12 PM
+m i right sir?
+From sharma.kajal.19@gmail.com . to Everyone 08:15 PM
+cab block chain contains images in a block???
+From saeed_raghib@msn.com . to Everyone 08:15 PM
+why do you need the version for?
+From zuluoscar65 . to Everyone 08:17 PM
+nft r example sir?
+can we do that by example sir?
+From Mohit Verma to Everyone 08:20 PM
+unable to understand NFT?
+From yashdoshi51 . to Everyone 08:20 PM
+please explain nft again
+From zuluoscar65 . to Everyone 08:22 PM
+also explain sft.
+From girish.khemani76@gmail.com . to Everyone 08:23 PM
+This image data is that of image / item catalog .. these are not financial transactions . So is non transactional data also stored within blocks
+From girish.khemani76@gmail.com . to Everyone 08:32 PM
+is it not efficient to keep financial transactions data .. buy/sell/ownership in blockchain and keep other asset data in traditional databases ... otherwise 1 MB blocksize will get filled with very less transaction
+From Me to Everyone 08:33 PM
+https://www.blockchain.com/explorer/blocks/btc?page=1
+From yashdoshi51 . to Everyone 08:35 PM
+how is it posible a new block was created before the previous block completely ful/
+filled*
+From Pranav B to Everyone 08:39 PM
+can blocks can be empty?
+without transactions i mean
+From saeed_raghib@msn.com . to Everyone 08:39 PM
+the 2nd one is 0 btc fees .... wonder why?
+From maverickmots@gmail.com . to Everyone 08:40 PM
+miner  = Binance Pool means? its the exchange or some miner registered on Binance
+From jinsongeo . to Everyone 08:42 PM
+is this right?
+ no. of chain = (no. miners + no. miner pools)
+From girish.khemani76@gmail.com . to Everyone 08:43 PM
+referring to that example where image pixels were also stored on blockchain . Is it not efficient to just keep financial transactions data .. buy/sell/ownership in blockchain and keep other asset data like image pixels in traditional databases ... otherwise 1 MB block size will get exhaust very soon with less transactions
+From mrneeraj03 . to Everyone 08:44 PM
+how much longer can be a chain ?
+ok sir
+From jinsongeo . to Everyone 08:44 PM
+so there is only one chain?
+From girish.khemani76@gmail.com . to Everyone 08:45 PM
+ok got it
+From saeed_raghib@msn.com . to Everyone 08:46 PM
+permissioned bc also one chain?
+From 1081btc . to Everyone 08:49 PM
+Can I have different types of wallets to store by address?
+From bittansari . to Everyone 08:55 PM
+yes
+From zuluoscar65 . to Everyone 08:55 PM
+yes
+From ankitdhr19@gmail.com . to Everyone 08:55 PM
+yes sir
+From ramanbhardwaj364@gmail.com . to Everyone 08:56 PM
+clear!
+From Mohit Verma to Everyone 09:04 PM
+UTXO is done at back-end network level , right? 
+From ankitdhr19@gmail.com . to Everyone 09:04 PM
+nice explanation sir.
+From bittansari . to Everyone 09:05 PM
+yes
+From Mohit Verma to Everyone 09:05 PM
+yes clear 
+From girish.khemani76@gmail.com . to Everyone 09:05 PM
+yes
+From vivekjamshedpur . to Everyone 09:05 PM
+yes
+From ramanbhardwaj364@gmail.com . to Everyone 09:05 PM
+clear!
+From girish.khemani76@gmail.com . to Everyone 09:05 PM
+how is transaction atomicity taken care of  .. User A buys an NFT for BTCs from User B ... suppose BTC debit for User A gets added to blockchain .. but NFT credit remains in the pool for long ... This delay in credit vs debit .. is that not a problem.
+From Satya to Everyone 09:05 PM
+yes clear 
+From Pranav B to Everyone 09:05 PM
+balance amount one have is said to be unspent right?
+From Ishant Wadhwa . to Everyone 09:05 PM
+is it same for ETh also?
+From mrneeraj03 . to Everyone 09:05 PM
+for all the txns who is liable to pay the fees
+From Aravind M to Everyone 09:06 PM
+Which protocol takes care this UTXO...is that PoW?
+From girish.khemani76@gmail.com . to Everyone 09:09 PM
+Does it mean that in BTC one user can not submit 2 transactions in one block?
+From Pranav B to Everyone 09:09 PM
+yes okk
+From Aravind M to Everyone 09:10 PM
+Ok..thnx
+From girish.khemani76@gmail.com . to Everyone 09:10 PM
+even if financials / amounts are different, the second will be rejected
+From mainak4ever@gmail.com . to Everyone 09:11 PM
+if txn x unspent has 2 btc and txn y unspent has 1 btc, if i want to transfer 3 btc to C , then how will it work ?
+From saeed_raghib@msn.com . to Everyone 09:13 PM
+what if the 2nd transaction is also authentic ... meaning transaction 1 is a transfer from A to B  of 1 BTC ..... and the 3 minutes later transaction 2 is also a transfer from A to B .... of another 3 BTC
+From maverickmots@gmail.com . to Everyone 09:14 PM
+this would only be happening is user A is receiving at the same time A is spending. if A received it and the intiates, it would be 2 different transactions right ? rec and transfer ie.
+From saeed_raghib@msn.com . to Everyone 09:20 PM
+what happens if transferring 0.55 btc?
+From maverickmots@gmail.com . to Everyone 09:26 PM
+can one cancel the transaction that has not added to the block?
+got it thank you
+From zuluoscar65 . to Everyone 09:29 PM
+sir every time/transaction fees is included?
+ok sir
+From ramanbhardwaj364@gmail.com . to Everyone 09:29 PM
+sender pays this fees or receiver??
+or both have to pay?
+From zuluoscar65 . to Everyone 09:29 PM
+yes sir break. time
+From girish.khemani76@gmail.com . to Everyone 09:29 PM
+given that there is significant delay in transactions getting confirmed .. this would also be significant drawbacks for variety of financial transactions which need instantaneous transfer
+From 1081btc . to Everyone 09:30 PM
+it depends on exchanges too ? fees
+But over the period of time fees will come down ?
+From zuluoscar65 . to Everyone 09:31 PM
+maker and taker fees? plz explain
+in exchanges
+ok
+From 1081btc . to Everyone 09:31 PM
+is fees % of transaction amount? Not fixed?
+From ankitdhr19@gmail.com . to Everyone 09:31 PM
+sir plz give basic idea of  ecdsa algorithm at least 5min at the end of session.
+From 1081btc . to Everyone 09:32 PM
+25mins 
+please
+From alkamandal1433@gmail.com . to Everyone 09:32 PM
+ok
+From ramanbhardwaj364@gmail.com . to Everyone 09:32 PM
+break time!
+From 1081btc . to Everyone 09:32 PM
+:) :)
+From alkamandal1433@gmail.com . to Everyone 09:32 PM
+ok
+From girish.khemani76@gmail.com . to Everyone 09:32 PM
+ok
+From Mohit Verma to Everyone 09:32 PM
+yes
+From mrneeraj03 . to Everyone 09:32 PM
+ok
+From vivekjamshedpur . to Everyone 09:32 PM
+ok
+From zuluoscar65 . to Everyone 09:32 PM
+yes yes
+From jinsongeo . to Everyone 09:55 PM
+how are transaction fee for a transaction handled?
+From skyaseenmuskan03370 . to Everyone 09:57 PM
+had class started
+From Mohit Verma to Everyone 09:57 PM
+no
+From maverickmots@gmail.com . to Everyone 09:57 PM
+doesnt look like
+From girish.khemani76@gmail.com . to Everyone 09:57 PM
+given that identities are anonymous how are financial disputes managed .. legally or how?
+From maverickmots@gmail.com . to Everyone 09:57 PM
+the screen is frozen it seems
+From Kaleemulla Mohammed . to Everyone 09:58 PM
+even I'm wondering the same
+I'm not sure if the Audio is on
+From alkamandal1433@gmail.com . to Everyone 09:58 PM
+hiii
+From mainak4ever@gmail.com . to Everyone 09:58 PM
+yes
+From alkamandal1433@gmail.com . to Everyone 09:58 PM
+yes
+From skyaseenmuskan03370 . to Everyone 09:58 PM
+yes
+From ashok.shrinivas@gmail.com . to Everyone 09:58 PM
+yes
+From varmarudraraju3 . to Everyone 09:58 PM
+Yes
+From Mohit Verma to Everyone 09:58 PM
+yes
+From Kaleemulla Mohammed . to Everyone 09:58 PM
+Yes it's clear now
+From vivekjamshedpur . to Everyone 09:58 PM
+yes
+From jinsongeo . to Everyone 09:58 PM
+can't see the screen
+From skyaseenmuskan03370 . to Everyone 09:58 PM
+yes
+From bhavaniravi27 . to Everyone 09:58 PM
+Audio unavailable
+From prakashvedv . to Everyone 09:58 PM
+yes
+From skyaseenmuskan03370 . to Everyone 09:58 PM
+yes
+From Aravind M to Everyone 09:58 PM
+yep you are audible
+From ankitdhr19@gmail.com . to Everyone 09:59 PM
+yes both audio and video visible
+From girish.khemani76@gmail.com . to Everyone 10:00 PM
+sure
+From Me to Everyone 10:01 PM
+https://www.hypr.com/security-encyclopedia/elliptic-curve-digital-signature-algorithm#:~:text=The%20Elliptic%20Curve%20Digital%20Signature%20Algorithm%20(ECDSA)%20is%20a%20Digital,public%20key%20cryptography%20(PKC).
+From ankitdhr19@gmail.com . to Everyone 10:01 PM
+ok sir.
+From tanwarkaku09@gmail.com . to Everyone 10:01 PM
+ok sir 
+From 1081btc . to Everyone 10:22 PM
+Both i/p and o/p are merkel roots?
+How will the individual transaction hash rool up to the hash of the block?
+roll*
+IS there a connection to transaction hash generated which is to be validated in a block and the actual hash of the block?
+From jinsongeo . to Everyone 10:29 PM
+How is the VerifySignature step done when we have the Public Key and Hash( DigiSignature+ Public Key) as inputs?
+From maverickmots@gmail.com . to Everyone 10:30 PM
+how does it verify if signature and public key are from same pair?
+From saeed_raghib@msn.com . to Everyone 10:34 PM
+can you post that link please?
+what is the point of copying PubKey, if it is to be replaced by its hash? why not just create hash from existing pub key? Is this happening because of "attempt to maintain a backup of the pub key"?
+From Me to Everyone 10:34 PM
+https://stackoverflow.com/questions/60385053/how-to-generate-the-ecdsa-public-key-from-its-private-key
+From 1081btc . to Everyone 10:48 PM
+FTX
+Cartel
+From 1081btc . to Everyone 10:53 PM
+Like Adani took NDTV :)
+From saeed_raghib@msn.com . to Everyone 10:53 PM
+in reality isnt this impossible?
+From ramanbhardwaj364@gmail.com . to Everyone 10:53 PM
+😂
+From saeed_raghib@msn.com . to Everyone 10:54 PM
+what about permissioned BC?
+From 1081btc . to Everyone 10:54 PM
+Amit Shah will purchase nodes
+From saeed_raghib@msn.com . to Everyone 10:59 PM
+ok
+can not hear
+is there gas fee and other fee in test network?
+From 1081btc . to Everyone 11:00 PM
+It is said that be it blockchain or etereum, there is a single chain...but companies like Polygon are creating lateral chains to build applications? will these chains behave differently to the actual single chain?
+Be it Bitcoin **
+From saeed_raghib@msn.com . to Everyone 11:01 PM
+how does it know what value to charge as fees?
+From mrneeraj03 . to Everyone 11:02 PM
+bitcoin, etherum,doge, shibu etc they all have different chains
+From 1081btc . to Everyone 11:03 PM
+ok
+From tanwarkaku09@gmail.com . to Everyone 11:06 PM
+u r not audible sir 
+From mrneeraj03 . to Everyone 11:06 PM
+not audible sir
+From tanwarkaku09@gmail.com . to Everyone 11:06 PM
+o 
+k
+yes 
+From mrneeraj03 . to Everyone 11:06 PM
+yes
+From vivekjamshedpur . to Everyone 11:07 PM
+yes
+From jinsongeo . to Everyone 11:17 PM
+Wont the seed node have the ledger copy?
+From saeed_raghib@msn.com . to Everyone 11:17 PM
+slide 74: i dont get step 3
+does the seed send message to accept the new node to others?
+From 1081btc . to Everyone 11:18 PM
+If assets are to be built on bitcoin (if adoption increases) like ethereum - then 21 Million BTC will be realized much early?
+From Pranav B to Everyone 11:23 PM
+sir block 3a and block 3b will have same transactions?
+From saeed_raghib@msn.com . to Everyone 11:24 PM
+		slide 81: what if block 3b was approved. what happens to block 4?
+From 1081btc . to Everyone 11:25 PM
+Great concepts today !! kind of core 
+From Pranav B to Everyone 11:26 PM
+what happens to transactions in block 3b?
+From saeed_raghib@msn.com . to Everyone 11:28 PM
+so block 4 may become block 7 ... for example, if it happens later?
+positioning is not important, correct?
+but timestamp ?
+maybe different
+From mainak4ever@gmail.com . to Everyone 11:28 PM
+as there is a appx of 30 min delay between creating blocks, before appending the next block , will they not know which block is nott approved??
+From saeed_raghib@msn.com . to Everyone 11:28 PM
+ok
+From get2prags@gmail.com . to Everyone 11:30 PM
+A
+From Pranav B to Everyone 11:30 PM
+a
+From sharma.kajal.19@gmail.com . to Everyone 11:31 PM
+a
+From tanwarkaku09@gmail.com . to Everyone 11:31 PM
+d
+From alkamandal1433@gmail.com . to Everyone 11:31 PM
+A
+From Mohit Verma to Everyone 11:31 PM
+D
+From Pranav B to Everyone 11:31 PM
+b
+From ankitdhr19@gmail.com . to Everyone 11:31 PM
+b
+From Aravind M to Everyone 11:31 PM
+A
+From get2prags@gmail.com . to Everyone 11:31 PM
+A
+From tanwarkaku09@gmail.com . to Everyone 11:32 PM
+a
+From bittansari . to Everyone 11:32 PM
+a
+From sharma.kajal.19@gmail.com . to Everyone 11:32 PM
+a
+From ankitdhr19@gmail.com . to Everyone 11:32 PM
+a
+From alkamandal1433@gmail.com . to Everyone 11:32 PM
+a
+From Mohit Verma to Everyone 11:32 PM
+a
+From get2prags@gmail.com . to Everyone 11:32 PM
+B
+From bittansari . to Everyone 11:32 PM
+b
+From Mohit Verma to Everyone 11:32 PM
+b
+From tanwarkaku09@gmail.com . to Everyone 11:32 PM
+d
+From mainak4ever@gmail.com . to Everyone 11:32 PM
+b
+From ankitdhr19@gmail.com . to Everyone 11:32 PM
+b
+From vivekjamshedpur . to Everyone 11:32 PM
+b
+From alkamandal1433@gmail.com . to Everyone 11:32 PM
+b
+From tanwarkaku09@gmail.com . to Everyone 11:32 PM
+b
+From get2prags@gmail.com . to Everyone 11:32 PM
+B
+From Mohit Verma to Everyone 11:32 PM
+b
+From Pranav B to Everyone 11:32 PM
+b
+From mainak4ever@gmail.com . to Everyone 11:33 PM
+b
+From sharma.kajal.19@gmail.com . to Everyone 11:33 PM
+b
+From vivekjamshedpur . to Everyone 11:33 PM
+b
+From alkamandal1433@gmail.com . to Everyone 11:33 PM
+BYY
+From saeed_raghib@msn.com . to Me (Direct Message) 11:34 PM
+QUESTION: 
+	Sir, I am not able to create a support ticket in Arya. This is happening because when I log in, this (IIT BC Cert Course) course is not listed in the ARYA's help dialog box of the simplilearn portal. 
+	Other courses that I have from the "Simplilearn Cert-School" are listed, but this course (IIT Blockchain Certification) from the "Simplilearn LMS" is not listed. So I am not able to select the course to create a support ticket against it.
+	This course was visible before (two weeks ago). Now it has disappeared.
+	
+	How do I connect with Simplilearn and support???
+From Ishant Wadhwa . to Everyone 11:34 PM
+which decentralized crypto wallet can be used in a mobile app for transactions like mmt use paytm etc?
+From Mohit Verma to Everyone 11:34 PM
+Thanks sir for a nice class
+From dheerajmaske . to Everyone 11:34 PM
+Thankyou
+From ankitdhr19@gmail.com . to Everyone 11:34 PM
+another good lecture sir.thank you.gd night
+From saeed_raghib@msn.com . to Everyone 11:34 PM
+thank you 
+From Aravind M to Everyone 11:34 PM
+Thank You
+Me to Faculty 101 (Direct Message) 11:35 PM
+we are done.
+From Pranav B to Everyone 11:35 PM
+blocks are added to blockchain only after approved by majority of peers right?
+Me to Faculty 101 (Direct Message) 11:35 PM
+please share the feedback url
+From tanwarkaku09@gmail.com . to Everyone 11:35 PM
+ok sir 
+WE CAN LEAVE THE MEETING 
+SIR 
+From Pranav B to Everyone 11:36 PM
+then how come another block is added to orphan block?
+From Faculty 101 to Everyone 11:36 PM
+https://lms.simplilearn.com/nps/session/637cdd6fbe655b674ae89113/1673791200000/95831117895/zoom
+From vivekjamshedpur . to Everyone 11:36 PM
+we can place our questions to community , can you answer ther?
+From Pranav B to Everyone 11:37 PM
+Thank you sir hear you next week
+Me to Faculty 101 (Direct Message) 11:37 PM
+https://lms.simplilearn.com/nps/session/637cdd6fbe655b674ae89113/1673791200000/95831117895/zoom
+From Me to Everyone 11:37 PM
+https://lms.simplilearn.com/nps/session/637cdd6fbe655b674ae89113/1673791200000/95831117895/zoom
+From vivekjamshedpur . to Everyone 11:38 PM
+Thank you! good night
+
+
+
+
+
+

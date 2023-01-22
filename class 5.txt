@@ -1,0 +1,276 @@
+Pranav B  to  Everyone 7:15 PM
+yes
+saeed_raghib@msn.com .  to  Everyone 7:15 PM
+yes
+vivekjamshedpur .  to  Everyone 7:15 PM
+yes
+alkamandal1433@gmail.com .  to  Everyone 7:15 PM
+yes
+Ishant Wadhwa .  to  Everyone 7:15 PM
+yes
+parveen.sahrawat1209@gmail.com .  to  Everyone 7:15 PM
+yes
+mrneeraj03 .  to  Everyone 7:15 PM
+yes
+Yash Purohit  to  Everyone 10:21 PM
+yes
+Kaleemulla Mohammed .  to  Everyone 10:32 PM
+could you please explain the difference again
+Pranav B  to  Everyone 10:34 PM
+so transactions is uncle blocks are again sent to transaction pool?
+saeed_raghib@msn.com .  to  Everyone 10:34 PM
+this is to attract miners to ethereum?
+Kaleemulla Mohammed .  to  Everyone 10:34 PM
+utxo vs eth statement
+jinsongeo .  to  Everyone 10:34 PM
+in PoS wont the Trnx Fee be fixed irrespective of which node picks?
+
+girish.khemani76@gmail.com .  to  Everyone 10:34 PM
+how do the reward for uncle blocks compare with those of main blocks
+mainak4ever@gmail.com .  to  Everyone 10:38 PM
+Uncle block rewards was there when ethereum had POW or it is there for POS, if there then how??
+saeed_raghib@msn.com .  to  Everyone 10:40 PM
+r u saing that uncle blocks don't exist in POS?
+shreyasbt .  to  Everyone 10:43 PM
+Is this model of "Ethereal Transaction" based on PoS or the earlier PoW?
+girish.khemani76@gmail.com .  to  You (Direct Message) 10:43 PM
+hi sir - need to drop off, will look at the recoding later.
+can I connect offline with you, if you can share you number or linked in contact
+saeed_raghib@msn.com .  to  Everyone 10:46 PM
+wait do u meant that earlier it was POW, now it is POS. I think that might have said the opposite a minute ago ... could you confirm pleas?
+You  to  Everyone 10:50 PM
+https://ipfs.tech/
+Pranav B  to  Everyone 10:55 PM
+how are data stored on nodes are there any other DBMS or swarm/IPSF only handles all data storage?
+1081btc .  to  Everyone 10:57 PM
+When Swarm can be cloud hosted- doesnt it beat the decentralized concept
+saeed_raghib@msn.com .  to  Everyone 10:58 PM
+u r fading in and out a bit ...
+You  to  Everyone 10:58 PM
+https://remix.ethereum.org/
+alkamandal1433@gmail.com .  to  Everyone 10:59 PM
+yes
+mrneeraj03 .  to  Everyone 10:59 PM
+yes
+1081btc .  to  Everyone 10:59 PM
+Now its clear
+parveen.sahrawat1209@gmail.com .  to  Everyone 10:59 PM
+yes
+mrneeraj03 .  to  Everyone 10:59 PM
+yes
+You  to  Everyone 11:00 PM
+https://remix.ethereum.org/
+zuluoscar65 .  to  Everyone 11:00 PM
+yes
+sharma.kajal.19@gmail.com .  to  Everyone 11:00 PM
+done
+vivekjamshedpur .  to  Everyone 11:00 PM
+yes
+yashdoshi51 .  to  Everyone 11:00 PM
+sir where to go in the website
+skmr5613 .  to  Everyone 11:01 PM
+Share again the URL
+
+You  to  Everyone 11:01 PM
+https://remix.ethereum.org/
+saeed_raghib@msn.com .  to  Everyone 11:02 PM
+u seem to have more icons on the left
+yashdoshi51 .  to  Everyone 11:03 PM
+no sir we have differnt view
+we have default workshop
+workspace*
+yashdoshi51 .  to  Everyone 11:04 PM
+yess
+vivekjamshedpur .  to  Everyone 11:05 PM
+we have less options on left hand side
+yashdoshi51 .  to  Everyone 11:05 PM
+sir is this website used to create smart contract?
+varmarudraraju3 .  to  Everyone 11:05 PM
+what scripting language is this?
+saeed_raghib@msn.com .  to  Everyone 11:07 PM
+.sol = solidity
+yashdoshi51 .  to  Everyone 11:07 PM
+sir is this website used to create smart contract?
+
+You  to  Everyone 11:07 PM
+Solidity --- .sol
+alkamandal1433@gmail.com .  to  Everyone 11:08 PM
+sir liscence
+Yash Purohit  to  Everyone 11:09 PM
+we have to use ^ symbol before version ?
+Kaleemulla Mohammed .  to  Everyone 11:09 PM
+First line is just a dummy line right?
+yashdoshi51 .  to  Everyone 11:09 PM
+what is a license?
+how to get that license?
+alkamandal1433@gmail.com .  to  Everyone 11:12 PM
+string
+jinsongeo .  to  Everyone 11:13 PM
+where are these files getting saved in this IDE? Is there a desktop version of this IDE?
+yashdoshi51 .  to  Everyone 11:13 PM
+sir what is 0.8. 13? 
+Kaleemulla Mohammed .  to  Everyone 11:13 PM
+I think we would need Test ETH to execute this code right?
+gayatrisingalwar786@gmail.com .  to  Everyone 11:13 PM
+can we do this again next week , like the code part
+saeed_raghib@msn.com .  to  Everyone 11:14 PM
+if the ide is web based, the where do i save my work?
+gayatrisingalwar786@gmail.com .  to  Everyone 11:14 PM
+its quiet complex
+yashdoshi51 .  to  Everyone 11:15 PM
+sir what is 0.8. 13?  what does it means?
+
+Kaleemulla Mohammed .  to  Everyone 11:17 PM
+version
+version of the compiler
+yashdoshi51 .  to  Everyone 11:18 PM
+ok. got it
+its getting too technical. 
+saeed_raghib@msn.com .  to  Everyone 11:19 PM
+what is the unit of the gas limit here  .... 3 million what?
+Kaleemulla Mohammed .  to  Everyone 11:21 PM
+When I'm deploying the contract, it's stuck at creation of helloworld pending
+does it take time to create a contract?
+varmarudraraju3 .  to  Everyone 11:22 PM
+do we have a desktop application for this?
+Kaleemulla Mohammed .  to  Everyone 11:24 PM
+it's a web version
+Kaleemulla Mohammed .  to  Everyone 11:24 PM
+Oh ok
+Desktop application is slowing down the system
+Pranav B  to  Everyone 11:26 PM
+can you explain more about web3 and where it is applied
+yashdoshi51 .  to  Everyone 11:26 PM
+yes sir please explain in simple language. 
+ankitdhr19@gmail.com .  to  Everyone 11:26 PM
+SIR WHERE TO FIND THE RECORDINGS OF THE SESSIONS AS PREVIOUS CLASSESRECORDING ARE NOT AVAILABLE TO ME UNDER PAST CLASS TAB?
+Kaleemulla Mohammed .  to  Everyone 11:27 PM
+Yes, Jan 15th Class attendance and Recording is not available
+Pranav B  to  Everyone 11:28 PM
+balance must be maintained in smart contract account??
+saeed_raghib@msn.com .  to  Everyone 11:28 PM
+no i mean is it 3million mini eth or something?
+dawarrior0496 .  to  Everyone 11:28 PM
+yes, past recorded classes are not availble
+Kaleemulla Mohammed .  to  Everyone 11:28 PM
+Test accounts will always have 100 ETH 
+mrneeraj03 .  to  Everyone 11:28 PM
+i am also not getting those classes
+past
+saeed_raghib@msn.com .  to  Everyone 11:29 PM
+recording for 15th is mission
+vivekjamshedpur .  to  Everyone 11:29 PM
+Can you change the slide where ever is required with current implementation
+saeed_raghib@msn.com .  to  Everyone 11:29 PM
+you have to create a support ticket to get it 
+mrneeraj03 .  to  Everyone 11:29 PM
+no
+Pranav B  to  Everyone 11:29 PM
+yes
+dawarrior0496 .  to  Everyone 11:29 PM
+no 
+Kaleemulla Mohammed .  to  Everyone 11:29 PM
+Yes past is available, only 15th is missing
+mrneeraj03 .  to  Everyone 11:29 PM
+i am not getting any class
+saeed_raghib@msn.com .  to  Everyone 11:29 PM
+there was a issue with zoom session 
+You  to  Faculty 101 (Direct Message) 11:29 PM
+Hi. Few Participants are not having access to recording it seems.
+rahulrathorerr001@gmail.com .  to  Everyone 11:30 PM
+attendance is also not available
+mainak4ever@gmail.com .  to  Everyone 11:30 PM
+attendance for 15 is also not given
+saeed_raghib@msn.com .  to  Everyone 11:30 PM
+so request it 
+Kaleemulla Mohammed .  to  Everyone 11:30 PM
+Jan 15th recording issue is faced by all
+vivekjamshedpur .  to  Everyone 11:30 PM
+Yes for me also attendance is not given, raised a ticket for this
+Faculty 101  to  Everyone 11:30 PM
+Please raise a ticket regarding recording issue we will send you the recordings of that sessions
+skyaseenmuskan03370 .  to  Everyone 11:30 PM
+mee also
+alkamandal1433@gmail.com .  to  Everyone 11:31 PM
+only for last lecture recording and attandance is noot updated yet
+Faculty 101  to  Everyone 11:31 PM
+some glitches happen in lms if some learners
+vivekjamshedpur .  to  Everyone 11:31 PM
+Can you change the slide where ever is required with current implementation
+saeed_raghib@msn.com .  to  Everyone 11:31 PM
+slide 48 right?
+Faculty 101  to  Everyone 11:31 PM
+https://lms.simplilearn.com/nps/session/637cdd6fbe655b674ae89113/1674309600000/95831117895/zoom
+saeed_raghib@msn.com .  to  Everyone 11:31 PM
+will start from slide 48?
+ok
+zuluoscar65 .  to  Everyone 11:31 PM
+ok
+Yash Purohit  to  Everyone 11:31 PM
+ok
+mrneeraj03 .  to  Everyone 11:31 PM
+sir what will be mine i am from non it background and not a very good in system work also
+yashdoshi51 .  to  Everyone 11:32 PM
+sir one request...
+saeed_raghib@msn.com .  to  Everyone 11:32 PM
+how do i save the contract from remix?
+ah! ok
+yashdoshi51 .  to  Everyone 11:33 PM
+can we start the technical coding part from next week and in between we can do little bit of coding
+so that we understand something then nothing
+thank you sir. please let us know where can we start with coding?
+You  to  Everyone 11:34 PM
+https://www.tutorialspoint.com/solidity/index.htm
+vivekjamshedpur .  to  Everyone 11:34 PM
+thanks
+yashdoshi51 .  to  Everyone 11:34 PM
+thanks 
+thank you
+skmr5613 .  to  Everyone 11:34 PM
+For non technical how to catch?
+jinsongeo .  to  Everyone 11:35 PM
+Can we do the smart contracts in other languages like js or Go
+saeed_raghib@msn.com .  to  Everyone 11:35 PM
+which IDE is used the most? REMIX or desktop based?
+jinsongeo .  to  Everyone 11:35 PM
+got it
+how is the blockchain job market
+You  to  Everyone 11:36 PM
+https://github.com/blockchaintraining90/batch5
+saeed_raghib@msn.com .  to  Everyone 11:36 PM
+is this goin to prep us for dev or architect jobs for blockchain?
+mrneeraj03 .  to  Everyone 11:36 PM
+sir this will be only helpful when we have good knowledge
+skmr5613 .  to  Everyone 11:37 PM
+Thank you 👍
+saeed_raghib@msn.com .  to  Everyone 11:37 PM
+great!
+dawarrior0496 .  to  You (Direct Message) 11:37 PM
+it is getting bit confusing and had for non technical background is there any solution / guidance?
+saeed_raghib@msn.com .  to  Everyone 11:37 PM
+thanks!
+Yash Purohit  to  Everyone 11:37 PM
+interview prep is also there ?
+skyaseenmuskan03370 .  to  Everyone 11:37 PM
+creat a crypto currence
+saeed_raghib@msn.com .  to  Everyone 11:37 PM
+sure
+mrneeraj03 .  to  Everyone 11:37 PM
+ok sir
+ramanbhardwaj364@gmail.com .  to  Everyone 11:37 PM
+Thanks everyone...bye!
+Yash Purohit  to  Everyone 11:37 PM
+thanks sir
+ankitdhr19@gmail.com .  to  Everyone 11:38 PM
+thank u sir. gd night to all friends
+Kaleemulla Mohammed .  to  Everyone 11:38 PM
+What job profiles can non tech guys look for
+Good night
+vivekjamshedpur .  to  Everyone 11:38 PM
+Thanks Jagadeesh
+jinsongeo .  to  Everyone 11:38 PM
+thank you!
+mrneeraj03 .  to  Everyone 11:38 PM
+thank you sir
+dawarrior0496 .  to  You (Direct Message) 11:38 PM
+yes sir thank you 
