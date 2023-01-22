@@ -1,0 +1,323 @@
+sharma.kajal.19@gmail.com .  to  Everyone 9:31 PM
+how can we set the account??
+girish.khemani76@gmail.com .  to  Everyone 9:31 PM
+yes
+saeed_raghib@msn.com .  to  Everyone 9:31 PM
+is ganache what developers use in companies during coding and debugging?
+sharma.kajal.19@gmail.com .  to  Everyone 9:31 PM
+0x996...
+its not done frm  me...
+jinsongeo .  to  Everyone 9:32 PM
+the contracts account also we listed in the accounts now, right?
+zuluoscar65 .  to  Everyone 9:32 PM
+this block 1 is this genesis block ?
+vivekjamshedpur .  to  Everyone 9:33 PM
+In transection tab we can see the data
+ok
+girish.khemani76@gmail.com .  to  Everyone 9:34 PM
+sir who manages the Ganache software .. how is it kept in sync with real ethereum blockchain software
+sharma.kajal.19@gmail.com .  to  Everyone 9:34 PM
+ya ya sir...
+thanks for help...
+Aravind M  to  Everyone 9:34 PM
+I clicked deploy twice by mistake which has created two blocks for the same contract...I can Block 0, Block 1, Block 2.
+
+And two transactions as well...Is that a way to remove a block in Ganache now
+
+Aravind M  to  Everyone 9:35 PM
+Ok...how to overcome this situation
+zuluoscar65 .  to  Everyone 9:35 PM
+yes sir break
+jinsongeo .  to  Everyone 9:35 PM
+one block for each transaction in the test network?
+girish.khemani76@gmail.com .  to  Everyone 9:35 PM
+yes
+parveen.sahrawat1209@gmail.com .  to  Everyone 9:35 PM
+ok sir
+mrneeraj03 .  to  Everyone 9:35 PM
+ok
+vivekjamshedpur .  to  Everyone 9:35 PM
+ok
+skyaseenmuskan03370 .  to  Everyone 9:36 PM
+yes
+ankitdhr19@gmail.com .  to  Everyone 9:36 PM
+ok sir?
+zuluoscar65 .  to  Everyone 9:36 PM
+ok sir
+You  to  Everyone 9:36 PM
+yes lets connect t 10 PM IST
+Aravind M  to  Everyone 9:37 PM
+clicking switch has reverted all blocks and transactions
+jinsongeo .  to  Everyone 9:37 PM
+need to save the current workspace i guess
+Aravind M  to  Everyone 9:42 PM
+Yes...that can help us to revert to the state we want when we do the wrong deployment
+ankitdhr19@gmail.com .  to  Everyone 10:02 PM
+welcome back everybody.
+vivekjamshedpur .  to  Everyone 10:02 PM
+yes
+bittansari .  to  Everyone 10:02 PM
+yes
+mrneeraj03 .  to  Everyone 10:02 PM
+yes
+gudivadasatya .  to  Everyone 10:02 PM
+yes
+Aravind M  to  Everyone 10:02 PM
+Yes
+parveen.sahrawat1209@gmail.com .  to  Everyone 10:02 PM
+yes
+Yash Purohit  to  Everyone 10:02 PM
+yes sir
+Aravind M  to  Everyone 10:04 PM
+But in prod there will not be auto-mining that will get rid off of WRONG double deployment for same contract right?
+Aravind M  to  Everyone 10:06 PM
+is there an option to disable auto-mining in ganache test network?
+Aravind M  to  Everyone 10:07 PM
+No in server its there
+can you navigate to server in advanced settings...when u navigate I saw
+mrneeraj03 .  to  Everyone 10:08 PM
+unable to set on new work space
+You  to  Everyone 10:10 PM
+https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en
+mohit_pu@yahoo.com .  to  Everyone 10:11 PM
+yes
+bittansari .  to  Everyone 10:11 PM
+y
+alkamandal1433@gmail.com .  to  Everyone 10:11 PM
+yes sir
+Pragati  to  Everyone 10:11 PM
+yes
+vivekjamshedpur .  to  Everyone 10:11 PM
+yes
+zuluoscar65 .  to  Everyone 10:12 PM
+can we use our seed if available? 
+mohit_pu@yahoo.com .  to  Everyone 10:15 PM
+yes
+mrneeraj03 .  to  Everyone 10:18 PM
+not saving
+zuluoscar65 .  to  Everyone 10:18 PM
+done
+mrneeraj03 .  to  Everyone 10:19 PM
+yes
+bittansari .  to  Everyone 10:19 PM
+y
+Yash Purohit  to  Everyone 10:19 PM
+Sir what is chain ID ?
+alkamandal1433@gmail.com .  to  Everyone 10:19 PM
+yes
+yashdoshi51 .  to  Everyone 10:20 PM
+local host wontopen
+zuluoscar65 .  to  Everyone 10:21 PM
+yes sir
+yashdoshi51 .  to  Everyone 10:21 PM
+not opening
+jinsongeo .  to  Everyone 10:21 PM
+is there not a way to edit the port in the wallet?
+bittansari .  to  Everyone 10:22 PM
+done
+yashdoshi51 .  to  Everyone 10:22 PM
+not opening
+can you please start again from add network
+Ved  to  Everyone 10:23 PM
+You can also click on network tab, select localhost 8545, edit the port, change the name to localhost 7545 save
+*Networks
+yashdoshi51 .  to  Everyone 10:25 PM
+chain id?
+jinsongeo .  to  Everyone 10:25 PM
+1337
+Kaleemulla Mohammed .  to  Everyone 10:25 PM
+Its not taking 1337
+mrneeraj03 .  to  Everyone 10:26 PM
+currency syymbol
+You  to  Everyone 10:26 PM
+1337
+ETH
+Kaleemulla Mohammed .  to  Everyone 10:26 PM
+This Chain ID is currently used by the Localhost 8545 network.
+
+varmarudraraju3 .  to  Everyone 10:26 PM
+yES
+yes
+jinsongeo .  to  Everyone 10:26 PM
+its more like a warning
+vivekjamshedpur .  to  Everyone 10:26 PM
+i am able to connect to local host
+mohit_pu@yahoo.com .  to  Everyone 10:27 PM
+connected
+Ishant Wadhwa .  to  Everyone 10:27 PM
+but no eth in ganache
+Kaleemulla Mohammed .  to  Everyone 10:27 PM
+Do we need to enter block explorer URL?
+Ved  to  Everyone 10:27 PM
+I can't see the transactions on metamask but it shows 99.99 ETH on ganache
+zuluoscar65 .  to  Everyone 10:28 PM
+done sir
+bittansari .  to  Everyone 10:29 PM
+done
+mohit_pu@yahoo.com .  to  Everyone 10:29 PM
+import done
+Ved  to  Everyone 10:29 PM
+got it, thanks
+yashdoshi51 .  to  Everyone 10:30 PM
+yes
+vivekjamshedpur .  to  Everyone 10:30 PM
+yes
+sharma.kajal.19@gmail.com .  to  Everyone 10:30 PM
+done sir
+girish.khemani76@gmail.com .  to  You (Direct Message) 10:32 PM
+sir can you please share your number or can we please connect on linkedin
+saeed_raghib@msn.com .  to  Everyone 10:32 PM
+how much wei is that equal to?
+Yash Purohit  to  Everyone 10:32 PM
+this gas fees is irrespective of amount of ethers transffered ?
+as the gas price is same for 10 eth and 105 eth.
+Aravind M  to  Everyone 10:33 PM
+So even if we sending 0 ETH the gas fee will be: 0.00042 ETH
+You  to  Everyone 10:37 PM
+1 Ether = 1000000000000000000 Wei.
+1 Ether = 1000000000000000 Kwei.
+1 Ether = 1000000000000 Mwei.
+1 Ether = 1000000000 Gwei.
+1 Ether = 1000000 Szabo.
+1 Ether = 1000 Finney.
+1 Ether = 0.001 Kether.
+1 Ether = 0.000001 Mether.
+yashdoshi51 .  to  Everyone 10:37 PM
+gwei means?
+yashdoshi51 .  to  Everyone 10:39 PM
+yes
+bittansari .  to  Everyone 10:39 PM
+yes
+mrneeraj03 .  to  Everyone 10:39 PM
+yes
+Yash Purohit  to  Everyone 10:39 PM
+yes
+jinsongeo .  to  Everyone 10:40 PM
+why is the To Address shown as Contract Address?
+You  to  Everyone 10:40 PM
+https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.17+commit.8df45f5f.js
+Aravind M  to  Everyone 10:41 PM
+Should I interpret that 0 ETH transaction like below: 
+as you told the 0.00042 ETH is the underlying value of a network is proven right? even if we send 0 eth there will be charges for the network other than miners
+
+vivekjamshedpur .  to  Everyone 10:44 PM
+i can see that option
+jinsongeo .  to  Everyone 10:49 PM
+we just need to refresh the tabs. able to connect to the metamask accounts from ganache
+alkamandal1433@gmail.com .  to  You (Direct Message) 10:50 PM
+sir send me your wallet address
+You  to  Everyone 10:50 PM
+0x21639a7c1Bb94C4f22EE33016B65D1D7a9eF65e6
+alkamandal1433@gmail.com .  to  You (Direct Message) 10:51 PM
+done sir
+check it once
+yashdoshi51 .  to  Everyone 10:51 PM
+can you please show again how did you connect sepolia testnetwork to metamask?
+alkamandal1433@gmail.com .  to  You (Direct Message) 10:51 PM
+send to goerli
+Pragati  to  Everyone 10:55 PM
+can you please repeat it again
+sharma.kajal.19@gmail.com .  to  Everyone 10:56 PM
+how we get GoerliETH??
+Yash Purohit  to  Everyone 10:56 PM
+unable to add sepolia testnetwork in metamask can you repeat it again sir ?
+mrneeraj03 .  to  Everyone 10:56 PM
+after deploying it will show in ganache blocks
+alkamandal1433@gmail.com .  to  Everyone 10:57 PM
+https://goerlifaucet.com/
+login with alchamy and get it
+Aravind M  to  Everyone 10:58 PM
+This is the message I am getting when I select Injected provider:
+
+No injected provider found. Make sure your provider (e.g. MetaMask) is active and running (when recently activated you may have to reload the page)
+You  to  Everyone 11:00 PM
+https://faucet.quicknode.com/ethereum/goerli/?transactionHash=0x8d9854af2c6ce1659eea9ee0811a902ad65c9e80156867b0df12426784934926
+Yash Purohit  to  Everyone 11:01 PM
+how to add sepolia to networks ?
+Yash Purohit  to  Everyone 11:03 PM
+thanks sir
+You  to  Everyone 11:04 PM
+https://faucet.goerli.starknet.io/
+Kaleemulla Mohammed .  to  Everyone 11:11 PM
+Do we create Test NFT in practical classes?
+vivekjamshedpur .  to  Everyone 11:14 PM
+if we sell a NFT means we transfer the ownership permanently?
+yashdoshi51 .  to  Everyone 11:16 PM
+can a nft bought from 1 platform sold on another?
+You  to  Everyone 11:19 PM
+https://testnets.opensea.io/
+jinsongeo .  to  Everyone 11:19 PM
+how can we create NFTs for a non digital assets
+mohit_pu@yahoo.com .  to  Everyone 11:20 PM
+test nets balance is showing zero after signing up
+yashdoshi51 .  to  Everyone 11:20 PM
+if we sell on another platform and owner of the original nft comes to know?
+Kaleemulla Mohammed .  to  Everyone 11:22 PM
+What the job roles available in Blockchain
+You  to  Everyone 11:23 PM
+https://roadmap.sh/blockchain
+saeed_raghib@msn.com .  to  Everyone 11:24 PM
+oracles?
+vivekjamshedpur .  to  Everyone 11:25 PM
+for architect how much experience ia required
+zuluoscar65 .  to  Everyone 11:28 PM
+where i can hire dev for smart contract on bep20? any reference? for a project
+Kaleemulla Mohammed .  to  Everyone 11:28 PM
+Is Community Manager or Business Analyst are the basic level roles?
+Entry level - I mean
+Yash Purohit  to  Everyone 11:29 PM
+what about college passouts having no experience ?
+saeed_raghib@msn.com .  to  Everyone 11:29 PM
+sure
+Kaleemulla Mohammed .  to  Everyone 11:30 PM
+What if someone is already experienced in Non Blockchain roles as a Manager etc in IT companies, will they be considered as a fresher in Blockchain jobs?
+Yash Purohit  to  Everyone 11:31 PM
+thanks sir
+jinsongeo .  to  Everyone 11:31 PM
+how can we create NFTs for a non digital assets
+
+Kaleemulla Mohammed .  to  Everyone 11:32 PM
+Got it, thank  you so much. That was my actual action - I'm actually trying to switch from Managerial roles
+saeed_raghib@msn.com .  to  Everyone 11:32 PM
+is your list in order of increasing salary or is it just a mixed list?
+Kaleemulla Mohammed .  to  Everyone 11:32 PM
+to Blockchain
+bittansari .  to  Everyone 11:33 PM
+thnks sir
+Kaleemulla Mohammed .  to  Everyone 11:33 PM
+One last question, if I may ask - what are the salary packages starting from in Blockchain roles?
+Just a basic idea
+mainak4ever@gmail.com .  to  Everyone 11:34 PM
+do a fresher has good scope in this domain, because most of the blockchain companies ask for atleast 2 year experience??
+alkamandal1433@gmail.com .  to  Everyone 11:34 PM
+what was the avg packg for last cohort
+Kaleemulla Mohammed .  to  Everyone 11:34 PM
+Ahh got it
+Pragati  to  Everyone 11:35 PM
+do we have to learn solidity ourselves?. Does this fundamental course cover that!?
+Kaleemulla Mohammed .  to  Everyone 11:35 PM
+No need to specify any number, I think I understood your statement by reading between the lines :D
+Kaleemulla Mohammed .  to  Everyone 11:36 PM
+Can we get a drive link of notes that you write in Notepad
+You  to  Everyone 11:36 PM
+https://github.com/blockchaintraining90/batch5
+Kaleemulla Mohammed .  to  Everyone 11:36 PM
+Sorry I lost that link
+alkamandal1433@gmail.com .  to  Everyone 11:36 PM
+ok Byy sir... and everyone
+ramanbhardwaj364@gmail.com .  to  Everyone 11:36 PM
+Thank you Everyone...bye!
+ankitdhr19@gmail.com .  to  Everyone 11:36 PM
+NICE LECTURE SIR ONCE AGAIN. GOOD NIGHT.
+Kaleemulla Mohammed .  to  Everyone 11:36 PM
+Thanks a lot
+saeed_raghib@msn.com .  to  Everyone 11:36 PM
+thanks
+PRATIK SHIVAJI KALE .  to  Everyone 11:36 PM
+Thank you.
+Kaleemulla Mohammed .  to  Everyone 11:36 PM
+Good night
+mainak4ever@gmail.com .  to  Everyone 11:37 PM
+thank you
+vivekjamshedpur .  to  Everyone 11:37 PM
+thanks jagadeesh
