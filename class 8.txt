@@ -1,0 +1,251 @@
+Agenda is to create truffle projc
+
+
+prerequisites --- node v18, truffle, solidity compiler
+
+
+Step1: Install node js version 18
+--------
+
+sudo apt install curl 
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+source ~/.bashrc
+nvm install 18
+
+Step2:
+--------
+npm install -g truffle (or) sudo npm install -g truffle
+
+Step3: crete workspace for project
+------
+
+mkdir MetaCoin
+cd MetaCoin
+
+Step4: truffle unbox for standard folder/project structure
+-------
+
+sudo truffle unbox metacoin or truffle unbox metacoin
+
+Step5:
+---------
+
+truffle compile or sudo truffle compile
+
+
+
+
+
+Public blockchains:
+--------------------
+
+
+ 1. ledger access is visible for everyone
+ 2. identity are anonymus
+
+Private blockchains:
+-------------------- 
+
+100 banks 
+
+
+phase1:
+-------
+
+network1- 
+
+10 banks are coming together to create a project called CreditLedger
+
+ a--->b txn1 ---> securely so that others in network
+
+ channels --> thru which diffefernet business entities can create and exchange info thru the
+
+
+a--->b 10 txn, 2 more private txn
+
+ledger:
+1. data attrbutes
+2. 
+.
+.
+.
+10. data ttributes
+
+11. private [data attiubutes]
+12. private [data attiubutes]
+
+
+other banks will store hash of these private data:
+
+11. hash of the private data
+12. hash of the private data
+
+potential gain that TAT for settlements and manual dispute is decreased by 20%
+
+2 more banks wishes to join
+
+config file:
+-------------
+
+seed nodes -
+
+1 more bank wishes to drop off after 5 yrs
+
+
+rest of banks ~ 100 / 150 ----> no visibility of the data/ledger access
+
+txn1 -----> sbi to canara bank (sbi, canara) ---> validate
+txn2 -----> sbi to karanta bank (sbi, karat) ---> validate
+
+
+block1---->  2 txns 
+
+
+policies:
+-----------
+
+ txn is being involved b/w bank A and bank B ----> it has to get approval from both banks ('bank A' AND 'bank B')
+
+ failed -- bank B hasnt given
+
+
+both options ---
+
+1. we can store data (normal data fields)
+2. we can store hash of the data (sensitive data)
+
+type Transaction {
+
+ userName public
+ AccountNum public
+ SSN        private
+ MobNum     private 
+} 
+
+
+
+
+
+
+
+
+
+network2
+
+ 10 insurance wants to create InsureLedger ----> claim process
+
+ these doesnt require any kind of transaction/gas/crypo fee ---> higher adoption
+
+
+
+INdy:
+----
+
+
+User A -----> wallet ----> can generate and store multiple DID
+
+ did1 ---> universirty degree (name, roll num, college, email) ----> func geneID (params) ---> unique id
+ did2 ---> credit/financial enquire ----> (name, email, bank accnt, bank name) --> func geneID(params) --- unique id2
+
+
+Orgs are building their own network:
+
+ sawtooth --->  Intel, Fujitsu
+ Iroha    --->  IBM, accentur
+ Indy     --->  DID use case 
+ Fabric   ----> IBM
+
+90% ----> Fabric
+
+
+In Fabric terms, chaincode(permissioned) and smart contract(piblic) are same
+
+
+network boot strap process:
+-----------------------------
+
+1. admin will create identities for all business entities (10 banks)
+ 
+ bank 1 ----> Identity1 {bank name, bank url, bank ip address, bank port, bank public key, bank x509 certs)
+ bank 2 ----> Identity2
+
+Consensus: RAFT, POS, DPOS, Smart BFT, PBFT ----> used (Raft)
+
+smart contract: node js, go, java, python(not advicible) ----> used (go/java)
+
+api/sdk: java, node js, go --->   used ---> go/java
+
+
+Identity Module:
+-------------------
+
+1. creates identity for business entities to be identifibale in the network
+
+ bank 1 is onboarded
+   
+  {
+    bak name
+    bank ip 
+    bank port
+    bank x509 certificates
+    bank public key
+ }
+
+idneity folder strucure  which is called MSP 
+
+
+
+
+ Bidding/auction based financial platform:
+-------------------------------------------
+
+ SEBI/CENTRAL party
+
+quote details ----> can only be sent/exchange b/w ----> bank a, sebi
+
+ we can define policy at transaction or smart contract level:
+
+  Ploicies : which requires approval/signature from bank A and SEBI
+
+
+
+config:
+-------
+
+
+channel1 ----> bank A, SEBI
+
+
+
+    
+
+   if PVT TXN = 'channel1'
+
+      {
+         policy = 'bank A' and 'SEBI'
+      }
+
+  if NRML TXN 
+    { 
+         polic = 'bank A' OR 'bank B'
+    }
+
+
+ 10 banks
+
+  if my txn is validated from 6 out of 10 banks ( n out of m)
+
+ I can consider this as valid txn
+
+ 
+
+
+Membership, Blockchain (peer to peer network), Transaction, Chaincode
+
+Peer roles: 
+-----------
+
+endorsement
+commiting
+anchor
+leader

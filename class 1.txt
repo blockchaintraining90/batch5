@@ -1,0 +1,174 @@
+Blockchain:
+-----------
+
+Dev:
+
+1. Front end/UI    -  20%
+2. Backend         -  70%  (java/node js/go + solidity) ---> 80%
+                           (RUST --> PolkaDOT/Solana) ---> 10%
+3. Network/admin   -  10%
+
+Prerequiste:
+
+node js --> backend (cohort1)
+java    --> smart contracts (cohort 2) -- HYperledger, R3 corda
+Linux + docker --> commands
+Solidity --> ethereum, polygon
+
+
+Blockchain network: (B2B) Use cases Banking consortium (5 banks for trade finance bond)
+
+private/enterprise blockchains ----> b2b (insurance bonds, trade bonds, )
+
+public ---> b2c (digtal assets, tokens, nfts, digital currencies)
+
+sbi, icici, hdfc, idfc, pnb -->
+
+(on premises) , (on premises), (on premises), (aws), (gcp)
+
+1. everone in the network should have some visibility on the ledger
+2. everyone should have same access to create blocks 
+
+ Consensus ---> mutual agreement among participants
+
+Cryptography --> data encryption, hashing, digital singatures
+
+
+Class Block
+{
+  header 
+   block id
+   timestamp
+   nonce
+  body
+   transaction
+}
+
+
+Hashing --> concept cryptography which enables secure communation
+
+[user1, $100, user2] ---> plain text/raw transaction
+
+hash of the message --> ghg768769867987hb,jhbhj987987987
+
+given input we can calculate output using hashing
+
+ encryption - symmetric/asymetric
+ digital signatures
+ hashing
+
+
+Genesis block: first block in blockchain
+
+var genesis = {
+  network name: bitcoin
+  network id : 756
+  no of bitcoins : 1 MN
+  start
+  end date
+} 
+
+
+
+hash (genesis) --- hiulhui7869876086098908nkjj98798
+
+
+
+genesis block([empty [] + current hash) ---> block 1 (previous hash + current hash) ---> block 2 ----> block3
+
+
+1500 transactions in the network ---
+
+
+protocol - 
+
+1. create blocks for every 5 seconds ---> 50
+2. crete blocks for 100 transacions ---15
+3. create blocks for 400 KB ---> 25
+
+
+
+
+
+Private blockchains ---> enterprises 5 banks 
+
+public ---> miners/validators ---> to validate the data and append to blocks
+            miners create pool of miners(sub groups) ---> control
+ 400-1000 nodes (network mining is 5-10 large pool of miners) 
+ 
+
+
+digital asset ofmy degree:
+--------------------------
+
+Name: jag
+course: CSE
+duration: 4 years
+CGPA:8
+start date:
+end date:
+
+ to smart contracts that creates unique id for me on blockchain for tohers to validate and verify my creditials
+
+tokenizee --- token id (209898098)
+
+query data from blockchain by passing this uniq (209898098), created by university ABC
+
+Fungible tokens vs non fungible tokens:
+
+ Fungible tokens --> each and evry token is same --- digitial currency (bitcoin,ethereum)
+ Non fungible token --> each and evry token is diff
+
+
+Banka, b ,c ,d ,e , bank e (regulator bank) --- USE case
+
+bank a lend 100 CR to bank b (bank a, b) (bank a, b, c, d, e)
+
+bank e wish to verify the amt of bank a lent to other banks ---> it can perform an analytical query on data avaailble in the ledger
+
+public blockchains --> data visiblity of other banks is an issue
+
+privtae blockahins/enterprise blockchains ---> data hiding/private data collection
+
+ based on txn origination , banks can specify the data visilibyt parameters 
+
+ bank a --- bank b , ---- bank e (bank1, transfer amt 100 CR, bank b, approved by bank e)
+
+ c,d----> stores the hash of the data hash(bank1, transfer amt 100 CR, bank b, approved by bank e)
+
+
+role definitons on transaction level 
+--------------------------------------
+
+smart contract:
+
+ if txn == bank A and involved with bank B
+   {
+     only bank a and bank b  }
+ else
+  { 
+     record/store the transaction
+  }
+
+
+data is stored on blockchains:
+
+1. data can be persisted (backup) on external disk/hardware
+2. sync data in the network from others
+
+   seed nodes in the network (this will help in sync up to date ledger)
+
+protocol level ---how many n of seed nodes --- (10-20)
+
+yahoo ---> yahoo
+
+gmail ---> gmail
+
+rediff
+
+hotmail
+
+
+
+
+

@@ -1,0 +1,387 @@
+girish.khemani76@gmail.com .  to  Everyone 9:16 PM
+network 15
+ankitdhr19@gmail.com .  to  Everyone 9:17 PM
+what is web3 sir?
+saeed_raghib@msn.com .  to  Everyone 9:17 PM
+how did u stop?
+vivekjamshedpur .  to  Everyone 9:17 PM
+command please
+sharma.kajal.19@gmail.com .  to  Everyone 9:18 PM
+sir plz give the commands
+You  to  Everyone 9:18 PM
+web3.eth.getBalance("0xd41DF0ac0Cf20a2070ee1F4eC5aF4C9816Ab7639")
+PRATIK SHIVAJI KALE .  to  Everyone 9:18 PM
+Can you explain again after stopping network 
+You  to  Everyone 9:18 PM
+geth --datadir=”ethdata” --networkid 15 --nodiscover --networkid 1999 console
+saeed_raghib@msn.com .  to  Everyone 9:18 PM
+in a different terminal?
+yashdoshi51 .  to  Everyone 9:18 PM
+bash: syntax error near unexpected token `"0xd41DF0ac0Cf20a2070ee1F4eC5aF4C9816Ab7639"'
+yashdoshi51 .  to  Everyone 9:19 PM
+bash: syntax error near unexpected token `"0xd41DF0ac0Cf20a2070ee1F4eC5aF4C9816Ab7639"'
+
+same message 
+You  to  Everyone 9:19 PM
+geth --datadir=”ethdata” --networkid 15 --nodiscover --networkid 1999 console
+sharma.kajal.19@gmail.com .  to  Everyone 9:19 PM
+not stop...
+yashdoshi51 .  to  Everyone 9:20 PM
+yes did enter
+PRATIK SHIVAJI KALE .  to  Everyone 9:20 PM
+worked for me 
+jinsongeo .  to  Everyone 9:20 PM
+what is network 1999
+girish.khemani76@gmail.com .  to  Everyone 9:20 PM
+we did not check, but the balance would have been 0 when we created/joined the chain
+yashdoshi51 .  to  Everyone 9:20 PM
+Fatal: Failed to create the protocol stack: datadir already used by another process
+
+sharma.kajal.19@gmail.com .  to  Everyone 9:21 PM
+fail to stop sir
+saeed_raghib@msn.com .  to  Everyone 9:21 PM
+no sound
+ankitdhr19@gmail.com .  to  Everyone 9:21 PM
+what is web3 and network 1999
+yashdoshi51 .  to  Everyone 9:22 PM
+if its genesiis block how does it have previous data?
+
+sharma.kajal.19@gmail.com .  to  Everyone 9:22 PM
+total=50
+INFO [01-28|15:52:04.985] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+Fatal: Failed to create the protocol stack: datadir already used by another process
+
+
+
+showing this
+sharma.kajal.19@gmail.com .  to  Everyone 9:22 PM
+yes sir
+just closed ?
+ok sir
+girish.khemani76@gmail.com .  to  Everyone 9:23 PM
+I am assuming that within genesis.json ... there should have been something to refer to Network 15 .. right?   IN json the chain id is 786 and not 15?
+saeed_raghib@msn.com .  to  Everyone 9:23 PM
+so first: geth --datadir=”ethdata” --networkid 15 --nodiscover --networkid 1999 console
+the the balance command?
+yashdoshi51 .  to  Everyone 9:23 PM
+balanace is 0
+
+You  to  Everyone 9:24 PM
+4. geth --datadir=”ethdata” --networkid 15 --nodiscover --networkid 1999 console
+5. web3.eth.getBalance("your address")
+saeed_raghib@msn.com .  to  Everyone 9:25 PM
+i am getting syntax error
+in the balance command
+You  to  Everyone 9:25 PM
+web3.eth.getBalance("0xd41DF0ac0Cf20a2070ee1F4eC5aF4C9816Ab7639")
+shreyasbt .  to  Everyone 9:26 PM
+Can you please type all the steps/commands in one go? (as the steps in the lab guide is incorrect and/or incomplete)
+jinsongeo .  to  Everyone 9:26 PM
+what is the networkid 1999
+saeed_raghib@msn.com .  to  Everyone 9:27 PM
+keep getting syntax error ... i am using double quotes and my address
+yashdoshi51 .  to  Everyone 9:29 PM
+can we please do it again entire process after break?
+You  to  Everyone 9:29 PM
+1. sudo apt-get install software-properties-common
+
+2. sudo add-apt-repository -y ppa:ethereum/ethereum
+
+3. sudo apt-get update
+
+4. sudo apt-get install ethereum
+
+5. geth version (1.9 or 1.10)
+
+6. geth --datadir ethdata account new
+
+7. nano genesis.json
+
+8. geth --datadir=”ethdata” init genesis.json
+
+9. geth --datadir=”ethdata” --networkid 15 --nodiscover --networkid 1999 console
+
+10. miner.setEtherbase("your account")  --> set the end user/miner account as base account for receving ethers for mining in the network
+
+11. miner.start(8) -> let it run for 15 mins
+
+12. CTRL +  C and type exit
+
+13. geth --datadir=”ethdata” --networkid 15 --nodiscover --networkid 1999 console
+
+14. web3.eth.getBalance("your address")
+saeed_raghib@msn.com .  to  Everyone 9:29 PM
+keep getting syntax error ... i am using double quotes and my address
+shreyasbt .  to  Everyone 9:30 PM
+@Co-ordinator: can you please ensure this is updated in the lab guide?
+saeed_raghib@msn.com .  to  Everyone 9:30 PM
+bash: syntax error near unexpected token `"0x86ea80902767afd4cF6AD52cF825911a02Bb3d1b"'
+using ...
+web3.eth.getBalance("0x86ea80902767afd4cF6AD52cF825911a02Bb3d1b")
+sharma.kajal.19@gmail.com .  to  Everyone 9:31 PM
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.10.17-stable-25c9b49f/linux-amd64/go1.18
+at block: 0 (Thu Jan 01 1970 00:00:00 GMT+0000 (UTC))
+ datadir: /home/sharmakajal19gm/”ethdata”
+ modules: admin:1.0 debug:1.0 eth:1.0 ethash:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
+To exit, press ctrl-d or type exit
+> web3.eth.getBalance("0xfFd66aA2Ebb844d7d53BcaA5929937b6095679B6")
+0
+
+saeed_raghib@msn.com .  to  Everyone 9:31 PM
+I had started the console but let me check again
+sharma.kajal.19@gmail.com .  to  Everyone 9:31 PM
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.10.17-stable-25c9b49f/linux-amd64/go1.18
+at block: 0 (Thu Jan 01 1970 00:00:00 GMT+0000 (UTC))
+ datadir: /home/sharmakajal19gm/”ethdata”
+ modules: admin:1.0 debug:1.0 eth:1.0 ethash:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
+To exit, press ctrl-d or type exit
+> web3.eth.getBalance("0xfFd66aA2Ebb844d7d53BcaA5929937b6095679B6")
+0
+
+
+it is ok sir?
+girish.khemani76@gmail.com .  to  Everyone 9:31 PM
+Once we are back from break, please explain that genesis.json step .. How and where are specifying the network details that we are joining
+sharma.kajal.19@gmail.com .  to  Everyone 9:32 PM
+ok
+PRATIK SHIVAJI KALE .  to  Everyone 9:32 PM
+ok
+parveen.sahrawat1209@gmail.com .  to  Everyone 9:32 PM
+Sir, will we get the balance of other's account if we started the genesis block with our account?
+girish.khemani76@gmail.com .  to  Everyone 9:32 PM
+ok
+parveen.sahrawat1209@gmail.com .  to  Everyone 9:32 PM
+Yeah, I mean query.
+ankitdhr19@gmail.com .  to  Everyone 9:32 PM
+ok
+parveen.sahrawat1209@gmail.com .  to  Everyone 9:33 PM
+25
+ankitdhr19@gmail.com .  to  Everyone 9:33 PM
+25 min
+bittansari .  to  Everyone 9:33 PM
+25
+ramanbhardwaj364@gmail.com .  to  Everyone 9:33 PM
+25
+girish.khemani76@gmail.com .  to  Everyone 9:33 PM
+25
+Aravind Kumar Murugaiyan  to  Everyone 9:33 PM
+Can you please ping that consolidated command, my machine hunged up
+You  to  Everyone 9:34 PM
+1. sudo apt-get install software-properties-common
+
+2. sudo add-apt-repository -y ppa:ethereum/ethereum
+
+3. sudo apt-get update
+
+4. sudo apt-get install ethereum
+
+5. geth version (1.9 or 1.10)
+
+6. geth --datadir ethdata account new
+
+7. nano genesis.json
+
+8. geth --datadir=”ethdata” init genesis.json
+
+9. geth --datadir=”ethdata” --networkid 15 --nodiscover --networkid 1999 console
+
+10. miner.setEtherbase("your account")  --> set the end user/miner account as base account for receving ethers for mining in the network
+
+11. miner.start(8) -> let it run for 15 mins
+
+12. CTRL +  C and type exit
+
+13. geth --datadir=”ethdata” --networkid 15 --nodiscover --networkid 1999 console
+
+14. web3.eth.getBalance("your address")
+Aravind Kumar Murugaiyan  to  Everyone 9:34 PM
+Thanks
+saeed_raghib@msn.com .  to  Everyone 9:34 PM
+so it worked in a different terminal window
+yashdoshi51 .  to  Everyone 9:57 PM
+sir please 5 min more
+saeed_raghib@msn.com .  to  Everyone 9:57 PM
+So it worked in the different terminal window. I see 2.72e+21 … that too much!!! Wright?
+In the same window I get: “Fatal: Error starting protocol stack: datadir already used by another process”
+i used ps command and geth is not running
+parveen.sahrawat1209@gmail.com .  to  Everyone 10:01 PM
+yes
+saeed_raghib@msn.com .  to  Everyone 10:01 PM
+yes
+ankitdhr19@gmail.com .  to  Everyone 10:01 PM
+yes
+ramanbhardwaj364@gmail.com .  to  Everyone 10:01 PM
+Back!
+vivekjamshedpur .  to  Everyone 10:02 PM
+yes
+Yash Purohit  to  Everyone 10:02 PM
+yes
+You  to  Everyone 10:06 PM
+https://chainlist.org/
+shreyasbt .  to  Everyone 10:09 PM
+Can you please explain again which part in your command or genesis file says that we're forking from 15 to 786?
+saeed_raghib@msn.com .  to  Everyone 10:13 PM
+if doing all how much memory would it take ?
+girish.khemani76@gmail.com .  to  Everyone 10:14 PM
+Sir it is still not clear where in genesis we are mentioning the reference to parent network ... network 15?
+parveen.sahrawat1209@gmail.com .  to  Everyone 10:16 PM
+Sir please explain mix hash again
+yashdoshi51 .  to  Everyone 10:17 PM
+sir if its genesis block  where is the data coming?
+prakashvedv .  to  Everyone 10:17 PM
+can you explain forking again pls
+shreyasbt .  to  Everyone 10:17 PM
+What's the difference between the coinbase address and the address we put in setEtherbase?
+prakashvedv .  to  Everyone 10:19 PM
+got it .. thanks
+jinsongeo .  to  Everyone 10:20 PM
+how will the address in the coinbase come into play when there are multiple participants in the network
+You  to  Everyone 10:23 PM
+https://geth.ethereum.org/docs
+ramanbhardwaj364@gmail.com .  to  Everyone 10:23 PM
+rewards will equally distributed among coinBase accounts?
+yashdoshi51 .  to  Everyone 10:23 PM
+sir if its genesis block  where is the data coming?
+
+You  to  Everyone 10:23 PM
+https://chainlist.org/
+girish.khemani76@gmail.com .  to  Everyone 10:24 PM
+sir, what was --networkid 1999 in the geth command we issued
+shreyasbt .  to  Everyone 10:24 PM
+Can you please clarify what exactly will be "private" when we say we're creating/forking a private eth blockchain node?
+yashdoshi51 .  to  Everyone 10:24 PM
+sir if its genesis block  where is the data coming?
+
+jinsongeo .  to  Everyone 10:24 PM
+is the coinbase mentioned in the genesis.json only for the genesis block or for the entire network?
+jinsongeo .  to  Everyone 10:26 PM
+so if a new participant comes, will a new one be added?
+Ishant Wadhwa .  to  Everyone 10:26 PM
+when we create a coin, it will create a new chain or part of eth only?
+jinsongeo .  to  Everyone 10:27 PM
+what about the main net
+yashdoshi51 .  to  You (Direct Message) 10:27 PM
+sir if its genesis block  where is the data coming?
+
+Ishant Wadhwa .  to  Everyone 10:28 PM
+sorry token not coins
+zuluoscar65 .  to  Everyone 10:29 PM
+sir we can only coins? can token also be forked? as they asre smart contract. pls explain
+we can only fork*
+shreyasbt .  to  Everyone 10:30 PM
+Shouldn't the account be the same in both setEtherbase and the account mentioned in the genesis file, since you mentioned they both are for receiving mining rewards?
+shreyasbt .  to  Everyone 10:33 PM
+Understood, thank you
+Can you please clarify what exactly will be "private" when we say we're creating/forking a private eth blockchain node?
+girish.khemani76@gmail.com .  to  Everyone 10:33 PM
+sir the role of the second network id is not clear
+zuluoscar65 .  to  Everyone 10:33 PM
+ok sir
+girish.khemani76@gmail.com .  to  Everyone 10:33 PM
+yes
+yashdoshi51 .  to  Everyone 10:34 PM
+sir can you please explain forking in simple words again. 
+Yash Purohit  to  Everyone 10:35 PM
++1
+saeed_raghib@msn.com .  to  Everyone 10:35 PM
+cloning at a particular time 
+Pranav B  to  Everyone 10:36 PM
+here forking is done because we are connecting testnet.. we will need genesis block of mainnet only to create node? 
+in mainnet ethereum
+saeed_raghib@msn.com .  to  Everyone 10:42 PM
+how many blocks are necessary to copy?
+yashdoshi51 .  to  Everyone 10:42 PM
+sir if we are able to change the data how is it safe and reliable?
+Ishant Wadhwa .  to  Everyone 10:42 PM
+when we create an eth token, that token has diff chain or part of ETH chain only?
+saeed_raghib@msn.com .  to  Everyone 10:42 PM
+i mean for forking 
+jinsongeo .  to  Everyone 10:43 PM
+if we are forking, then we wont need to setup the genesis block?
+yashdoshi51 .  to  Everyone 10:43 PM
+sir if we are able to change the data how is it safe and reliable?
+like we are able to copy the data
+why would we need to copy it?
+saeed_raghib@msn.com .  to  Everyone 10:44 PM
+so if we mention the blocks then does that mean that we know what is in those blocks?
+Pranav B  to  Everyone 10:44 PM
+protocols can be changed in forking?
+You  to  Everyone 10:46 PM
+jinsongeo .  to  Everyone 10:46 PM
+so our genesis bloc + borrowed bocks
+yashdoshi51 .  to  Everyone 10:46 PM
+so the data in the genesis block will have data of parent block?
+Pranav B  to  Everyone 10:47 PM
+protocols are specified only in genesis block???
+Pranav B  to  Everyone 10:47 PM
+ok thanks
+jinsongeo .  to  Everyone 10:51 PM
+will the new block in our network have previous block link to the genesis block or the borrowed blocks
+You  to  Everyone 10:51 PM
+https://web3js.readthedocs.io/en/v1.8.1/
+jinsongeo .  to  You (Direct Message) 11:10 PM
+what happens in the case of a real painting? like Monalisa, can we create an NFT for it?
+You  to  Everyone 11:10 PM
+https://dev.to/rounakbanik/building-a-web3-frontend-with-react-340c
+saeed_raghib@msn.com .  to  Everyone 11:12 PM
+yes
+saeed_raghib@msn.com .  to  Everyone 11:18 PM
+do you have to write a "reader" function to read the different ABIs for different applications? 
+saeed_raghib@msn.com .  to  Everyone 11:20 PM
+so if th solidity file has a button to click .... how do we control it in the app.js file?
+saeed_raghib@msn.com .  to  Everyone 11:23 PM
+ok
+saeed_raghib@msn.com .  to  Everyone 11:24 PM
+is there a project at the end of this course or just an assesment?
+jinsongeo .  to  You (Direct Message) 11:24 PM
+what happens in the case of a real painting? like Monalisa, can we create an NFT for it?
+
+jinsongeo .  to  Everyone 11:26 PM
+can't digital assets be duplicated?
+Faculty 101  to  Everyone 11:27 PM
+https://lms.simplilearn.com/nps/session/637cdd6fbe655b674ae89113/1674914400000/95831117895/zoom
+https://lms.simplilearn.com/nps/session/637cdd6fbe655b674ae89113/1674914400000/95831117895/zoom
+saeed_raghib@msn.com .  to  Everyone 11:27 PM
+on opensea, when u buy an nft then does the seller also mail you the original?
+jinsongeo .  to  Everyone 11:28 PM
+Images can be duplicated. 
+You  to  Everyone 11:29 PM
+https://dev.to/rounakbanik/building-a-web3-frontend-with-react-340c
+jinsongeo .  to  Everyone 11:29 PM
+the capstone project will need all of these technologies right?
+sharma.kajal.19@gmail.com .  to  Everyone 11:30 PM
+when we start the project in APril?
+jinsongeo .  to  Everyone 11:30 PM
+is there a public repo of common smart contracts?
+sharma.kajal.19@gmail.com .  to  Everyone 11:30 PM
+ok sir thank u so much :)
+saeed_raghib@msn.com .  to  Everyone 11:31 PM
+there is no end of course projects?
+right?
+only assessment
+skmr5613 .  to  Everyone 11:31 PM
+This recording videos how long we will learn 
+skyaseenmuskan03370 .  to  Everyone 11:31 PM
+we can leave sir
+ok sir
+thanku sisr
+jinsongeo .  to  Everyone 11:32 PM
+Thank you!
+Pranav B  to  Everyone 11:32 PM
+Thank you sir
+ankitdhr19@gmail.com .  to  Everyone 11:32 PM
+gd night all thank you
+sharma.kajal.19@gmail.com .  to  Everyone 11:32 PM
+thank u sir :)
+skmr5613 .  to  Everyone 11:32 PM
+Thank you
+ypurohit988@gmail.com .  to  Everyone 11:32 PM
+Thank You Sir
+R M  to  Everyone 11:32 PM
+Thhank you
