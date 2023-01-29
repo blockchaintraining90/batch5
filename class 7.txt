@@ -1,0 +1,250 @@
+Smart Contracts:
+----------------
+
+business logic/contract agreements whcih can be writen in solidity
+
+ a.) token standards: ERC20, ERC721
+
+when we deploy a smart contract ---> unique contract account (987987907hgkhjgjhgkjgkj)
+
+
+EVM ---> execution engine which runs the smart contract
+
+
+GETH address - 0xd41DF0ac0Cf20a2070ee1F4eC5aF4C9816Ab7639
+
+
+chain id ---> 1 -- mainnet
+              5 -- test net
+              7 -- test net goelri
+
+              786 ---> private chain id  
+
+
+when connecting to either Mainnet/test net ---> it captures and sync few blocks from the network
+
+Mainnet ---> block 19000 ---> 2/3 days
+testnet ---> blocks 100  ---> 5 mins
+
+DAG is in progress ----> directed acyclic graph (data structure) ---> block syncing process
+
+
+
+
+
+
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.13;    // include
+contract Helloworld {       // class class name
+    function helloworld () public pure returns (string memory) {
+        return "Hello World";
+    }
+}
+
+
+
+react project:
+----------------
+
+ app.js 
+
+ { 
+
+ import abi = abi ('ballot')
+ import address = '8098098-09=-09=09-=09-'
+
+ "ballot.sol" ---> smart contract
+
+web ----->             web3.js apis(ABI, smart contract address)  ------------> blockchain
+
+simple practice of web3, truffle frameowkr ----> 
+
+
+ abi.Proposalvotes (voter name, candidate id)
+
+ {
+
+ }
+
+ABI (application binary interface) ---> gives a birds eye viewof the smart contract
+
+
+
+[
+	{
+		"inputs": [],
+		"name": "helloworld",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "proposalNames",
+				"type": "bytes32[]"
+			}
+		],
+		"stateMutability": "nonpayable",/pure/payable/view
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "chairperson",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			}
+		],
+		"name": "delegate",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "voter",
+				"type": "address"
+			}
+		],
+		"name": "giveRightToVote",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "proposals",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "name",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "voteCount",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "proposal",
+				"type": "uint256"
+			}
+		],
+		"name": "vote",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "voters",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "weight",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "voted",
+				"type": "bool"
+			},
+			{
+				"internalType": "address",
+				"name": "delegate",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "vote",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "winnerName",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "winnerName_",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "winningProposal",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "winningProposal_",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
