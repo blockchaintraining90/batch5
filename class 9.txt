@@ -1,0 +1,183 @@
+
+Read Write set:
+----------------
+
+1. Txn to chnage the ownership from Joe to Kavin
+    
+tnx1 --> (assetid (1234), joe, kavin)
+tnx2 --> (assetid (1234), joe, carol)
+
+endorsing peer --->
+ 
+ 1234  ----> joe
+ 
+ read set (key-1234, version -1, value - joe)
+
+ write set (key-1234, version -1, value - kavin)
+
+post RW validation --> (key- 1234, value - kavin, version-2)
+
+
+
+endorsing peer --->
+ 
+ 1234  ----> joe
+ 
+ read set (key-1234, version -1, value - joe)
+
+ write set (key-1234, version -1, value - carol)
+
+read write ---> fail ---> double
+
+
+
+
+RAFT ---> [ 1 2 3 4 5 ]
+
+
+leader election ---> R1 --> [ 3 ] ----> gets chance to form blocks
+
+log replication ----> [3] ---> [ t1 t2 t3 t4 ] ---> B1
+
+
+leader elction ----> R2 --> [5] --->
+
+
+
+CFT ---> 2n+1 
+
+ 1 crash ----> 3 nodes
+ 2 crash ----> 5 nodes  ( 3 nodes are active and 2 nodes are not active)
+ 3 crash ----> 7 nodes 
+
+
+Ordering service ----> cluster --- [ 1 2 3 4 5]
+leader node wil be 1 for every round ---> L1
+
+
+
+Prerequisites:
+------------------
+
+sudo apt-get install curl
+
+curl --version
+
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash
+
+sudo apt-get update
+
+sudo apt-get install nodejs
+
+sudo node --version
+
+sudo apt-get install git
+
+git --version
+
+sudo apt-get install python
+
+python --version
+
+sudo apt-get install libltdl-dev
+
+wget https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_17.06.2~ce-0~ubuntu_amd64.deb
+
+sudo dpkg -i docker-ce_17.06.2~ce-0~ubuntu_amd64.deb
+
+docker --version
+
+sudo apt-get install python3-pip
+
+pip3 --version
+
+sudo pip3 install docker-compose
+
+docker-compose version
+
+
+Clone and download Fabric repositiry from github:
+--------------------------------------------------
+
+sudo chmod 666 /var/run/docker.sock
+
+sudo systemctl restart docker
+
+sudo curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.2.2 1.4.9
+
+cd fabric-samples/
+
+
+Componnets of Fabric:
+----------------------
+1. CA
+2. PEER
+3. ORDERER
+
+
+
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+docker-compose --version
+
+sudo systemctl restart docker.socket docker.service
+
+sudo ./network.sh up
+
+sudo docker ps
+
+docker exec peer0.org1.example.com peer channel list
+
+
+Test network:
+--------------
+ 2 peers (org1, org2)
+ 1 orderer
+
+
+sudo rm /usr/local/bin/docker-compose
+
+sudo apt remove docker-compose
+
+sudo apt autoremove
+
+
+sudo apt update
+
+sudo apt install curl -y
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+docker-compose --version
+
+
+test network: 2 orgs, 1 orderer
+options     : CA, couchdb
+options     : create channel
+
+network.sh ----> to start the fabric test network
+
+sudo docker ps ---> to check the list of docker process/containers running
+
+docker exec peer0.org1.example.com peer channel list ---> to check the channels the peer is installed on
+
+sudo ./network.sh createChannel -c testchannel   ---> to start test network with channel and name is 'testchannel'
+
+sudo ./network.sh up -ca ----> to start network with cerrificate authority
+
+sudo ./network.sh up -s couchdb ---> start test newrok with couchdb as statedatabase
+
+sudo ./network.sh up -ca -s couchdb ---> ideaway of starting network
+
+
+
+Fabric Network admin -----> Devops/CHFA
+
+
+
+
