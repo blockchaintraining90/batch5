@@ -1,0 +1,223 @@
+test network:
+
+2 orgs
+ 
+1 order
+
+
+Async process:
+--------------
+
+client 1 ----> request to read a file from File system
+
+client 2 ----> request to open a DB for update operation
+
+client 3 ----> request to start a web server
+
+client 4 ----> print logs
+
+
+
+server:
+-------
+
+1 - req1 ---> client ---> read file
+2 - req2 ---> open the db
+3 - req1 ---> send the file to client1
+4 - req3 ---> to start another web server
+5 - req2 ---> notofies to client saying
+6 - req3 ---> start the new web req from clinet3
+
+Event loop ----> node js
+
+
+
+java:
+------
+ import java.*
+ class Helloworld
+  {
+    system.out.printl("helloworld")
+  }
+
+compile to bytecode ---> java
+
+C:
+----
+
+
+#include <stdio>
+
+ main ()
+ func 
+{ 
+
+ printl ('helloworld')
+
+}
+
+compile ---> run
+
+
+node js:
+----------
+
+console.log ("helloworld");
+
+ node helloworld.js
+
+
+java:
+
+ import java.*
+
+nodejs:
+
+ command to import http omodule
+
+var http = require('http')
+
+
+
+create webserver:
+------------------
+
+1. import http module
+
+2. var for http
+
+3. var for port
+
+4. create serve using http.createServe
+
+5. start the server on port
+
+
+
+promises and async/await:
+--------------------------
+
+ promise ---> client
+
+ a. resolve ---> consider file read is success
+ b. reject  ---> 
+
+
+async/await --->
+
+
+File system ----> fs
+
+var fs = require('fs') 
+
+ fs.createfile
+ fs.openfile
+ fs.writefile
+ fs.readfile
+ fs.closefile
+
+
+http.createServer
+http.closeServer
+
+
+to handle apis with http is time consuming for devs and for processing
+
+express is a framework developed on top of http to handle
+
+1. effective api calls
+2. easy database integrations
+3. effective handlers
+4. fast processing time
+
+
+C R U D
+
+post/get/put/delete
+
+get---->
+
+app.get('/'
+
+
+
+ledger:
+---------
+1. asset 1 -> 5000
+2. asset 1 -> 15000
+
+world state:
+------------
+
+1. asset 1 -> 5000 + delta ----> 5000 + 15000 ---> 20,000
+
+
+work flows:
+-----------
+
+1. transaction
+2. digital signature verification
+3. completed by both parties involved in the txn
+
+
+
+Corda network:
+--------------
+
+ 5 banks who wish to join a corda network for a DLT credit/Letter of credit 
+
+peers ----> 5 banks
+
+miners/validators/ordering service ----> Doesnt use 
+
+Notary service ----> central node which will validate txn
+
+
+1. identity process ---> which generates required pub/priv keys, identity certificates
+   
+2. Network map service ---->
+
+ txn1 ----> user1 (bank1) ----> user2 (bank2)
+
+Routing tables:
+ [bank1 ---> 100.20.16.140/DNS
+   bank2 ---> 100.21.16.150
+   . bank5 ---> 100.25.17.123]
+
+3. notary service --->  {123 9 10 11 15 16}
+
+ bank1 , bank2 ---> 1 2 3
+
+ bank2, bank3 ---> 9 10 11 
+
+ bank3 , bank4 ---> 15 16
+
+
+
+Corda is used for only finanical based apps ----> (standard version (minimal , 1000tps) and enterprise versin) ---> costly
+ per txn basis --->
+
+Fabric ---> almost all apps ---> open source (free)
+
+
+
+
+(openzeplin, alchemy, moralis, chainlink)
+
+Ethereum: solidity, web3.js, ethers.js, truffle, hardhat, openzeppline contract specifications (erc20, erc721, erc1155) ---> "2"
+
+
+(enterprises)
+Fabric: java/nodejs/golang, network commands, linux, docker, kubernetes ---> "1"
+
+Corda: java/kotlin
+
+IOTA
+
+Algorand
+
+PolkaDot
+
+Solana
+
+Hedera hashgraph
